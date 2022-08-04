@@ -1,0 +1,3344 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+    <meta name="robots" content="index,follow">
+	<title>반려동물 집밥 만들기</title>
+	<meta name="title" content="반려동물 집밥 만들기">
+	<meta name="description" content="반려동물, 품종, 성장단계, 성별, 활동단계를 선택하고 원료를 선택하여 배합비를 계산한다.">
+	<meta name="keywords" content="농사로,농사,농업,생활문화,반려동물,집밥">
+	<meta name="og:title" content="반려동물 집밥 만들기">
+	<meta name="og:description" content="반려동물, 품종, 성장단계, 성별, 활동단계를 선택하고 원료를 선택하여 배합비를 계산한다.">
+	<meta name="og:url" content="http://www.nongsaro.go.kr/portal/ps/psx/psxf/feedMxnWritngSportProgrm.ps?menuId=PS04088">
+	<meta name="og:type" content="website">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+	<style> table, th, td { border: 1px solid darkgray; } </style>
+</head>
+
+<body>
+    <div id="wrap">
+		<div id="container" class="feed-container">
+			<div id="contents" class="tit_bg">
+				<div class="location clearfix">
+					<div class="loc-bx">
+					</div>
+				</div>
+				<div id="printZone">
+					<div class="sub_tit">
+						<h3 class="titleNm"></h3>
+					</div>
+
+					<form name="srchFm" method="post">
+						<input type="hidden" id="feedNm" name="feedNm" value="">
+						<input type="hidden" id="upperFeedClCode" name="upperFeedClCode" value="402002">
+						<input type="hidden" id="sortField" name="sortField" value="">
+						<input type="hidden" id="sortOrder" name="sortOrder" value="ASC">
+						<input type="hidden" id="protQy" name="protQy" value="">
+						<input type="hidden" id="trypQy" name="trypQy" value="">
+						<input type="hidden" id="clciQy" name="clciQy" value="">
+						<input type="hidden" id="phphQy" name="phphQy" value="">
+						<input type="hidden" id="fatQy" name="fatQy" value="">
+						<input type="hidden" id="lnacQy" name="lnacQy" value="">
+						<input type="hidden" id="liacQy" name="liacQy" value="">
+						<input type="hidden" id="vtmaQy" name="vtmaQy" value="">
+						<input type="hidden" id="naQy" name="naQy" value="">
+						<input type="hidden" id="ptssQy" name="ptssQy" value="">
+						<input type="hidden" id="mgmQy" name="mgmQy" value="">
+						<input type="hidden" id="mitrMxmm" name="mitrMxmm" value="100">
+						<input type="hidden" id="protMxmm" name="protMxmm" value="500">
+						<input type="hidden" id="trypMxmm" name="trypMxmm" value="500">
+						<input type="hidden" id="clciMxmm" name="clciMxmm" value="300">
+						<input type="hidden" id="phphMxmm" name="phphMxmm" value="300">
+						<input type="hidden" id="fatMxmm" name="fatMxmm" value="500">
+						<input type="hidden" id="lnacMxmm" name="lnacMxmm" value="500">
+						<input type="hidden" id="liacMxmm" name="liacMxmm" value="500">
+						<input type="hidden" id="vtmaMxmm" name="vtmaMxmm" value="500">
+						<input type="hidden" id="naMxmm" name="naMxmm" value="300">
+						<input type="hidden" id="ptssMxmm" name="ptssMxmm" value="300">
+						<input type="hidden" id="mgmMxmm" name="mgmMxmm" value="300">
+						<input type="hidden" id="mitrMumm" name="mitrMumm" value="100">
+						<input type="hidden" id="protMumm" name="protMumm" value="100">
+						<input type="hidden" id="trypMumm" name="trypMumm" value="100">
+						<input type="hidden" id="clciMumm" name="clciMumm" value="100">
+						<input type="hidden" id="phphMumm" name="phphMumm" value="100">
+						<input type="hidden" id="fatMumm" name="fatMumm" value="100">
+						<input type="hidden" id="lnacMumm" name="lnacMumm" value="100">
+						<input type="hidden" id="liacMumm" name="liacMumm" value="100">
+						<input type="hidden" id="vtmaMumm" name="vtmaMumm" value="100">
+						<input type="hidden" id="naMumm" name="naMumm" value="100">
+						<input type="hidden" id="ptssMumm" name="ptssMumm" value="100">
+						<input type="hidden" id="mgmMumm" name="mgmMumm" value="100">
+					</form>
+
+					<div id="feedMixPro">
+						<strong class="step_title txt-l">1. 반려동물을 선택해 주세요</strong>
+						<div class="chkPet floatDiv">
+							<span class="dog"><button type="button" name="animalSeCode" value="400001">개</button></span>
+							<span class="cat"><button type="button" name="animalSeCode" value="400002">고양이</button></span>
+						</div>
+						<div class="chkPetStep floatDiv">
+							<div class="stepBox">
+								<strong class="step_title txt-l"><label for="sText">2. 품종 선택</label></strong>
+									<!-- 품종 검색 -->
+									<!-- <span class="floatDiv">
+										<input type="text" class="inputData" id="sText" name="sText" autocomplete="off" autocapitalize="off" placeholder='품종명' onblur="this.placeholder='품종명'" onfocus="this.placeholder=''">
+										<input type="submit" class="inputSch" onclick="fncSearch(); return false;">
+									</span> -->
+								<br/>
+								<!-- 품종 리스트 -->
+								<select class="stepList1" id="speciesHtml" size="15"><option value=""></option></select>
+							</div>
+							<div class="stepBox">
+								<div>
+									<strong class="step_title txt-l">3. 성장단계 선택</strong>
+									<div class="stepList1" id="species2Html"><a href="#">자견</a>&nbsp;<a href="#" class="active">성견</a></div>
+								</div>
+								<div>
+									<strong class="step_title txt-l">4. 성별 선택</strong>
+									<div class="stepList1" id="species3Html"><a href="#" class="active">암컷</a>&nbsp;<a href="#">수컷</a></div>
+								</div>
+							</div>
+							<div class="stepBox">
+								<strong class="step_title txt-l">5. 활동단계 선택</strong><br/>
+								<!-- 활동단계 리스트 -->
+								<select class="stepList1 step2" id="growthActStepHtml" size="15"><option value=""></option></select>
+							</div>
+							<div class="btn_stepBox">
+								<strong class="step_title txt-l">6. 원료선택, 배합</strong><br/>
+								<div><a href="#" onclick="javascript:fncRawMaterialChoice(); return false;" class="btn btn1" title="원료선택 레이어 열기">원료선택</a></div>
+								<div><input type="submit" class="btn btn2" value="배합비계산" onclick="javascript:fncMxnCtCalc(); return false;"></div>
+								<div class="resultBox">배합상태</div><!-- warning : 실패  sucess: 성공 -->
+							</div>
+						</div>
+					</div>
+					<!-- ------------------------------------------------------------ -->
+					<div><hr/></div>
+					<div class="board-list02">
+						<div id="excelExport1" class="tbl-type01 list mt15">
+							<table class="new">
+								<!-- <caption>반려동물 사료배합비 작성지원 프로그램 입력 표</caption> -->
+								<thead>
+									<tr>
+										<th scope="col">현재 체중<br>(kg)</th>
+										<th scope="col" class="goalFrwgView">목표 체중<br>(kg)</th>
+										<th scope="col" class="exclExceptArea" style="display:none;">사료에너지<br>(kcal/kg, DM)</th>
+										<th scope="col" style="display:none;" class="emergAnimalView exclExceptArea">신생동물<br>(마리)</th>
+										<th scope="col" style="display:none;" class="stageOfLactationView exclExceptArea">비유기<br>(주차)</th>
+										<th scope="col" style="display:none;" class="expectMtrtyFrwgView exclExceptArea">예상 성숙<br>체중(kg)</th>
+										<th scope="col" style="display:none;" class="actDgreeView exclExceptArea">활동정도</th>
+										<th scope="col" class="exclExceptArea" style="display:none;">수분함량(%)</th>
+										<th scope="col">배합량<br>(kg)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="tc"><input class="chgInp" type="text" name="nowFrwg" id="nowFrwg" style="width: 50px !important; text-align:center;" value="7" title="현재 체중(kg)"></td>
+										<td class="tc goalFrwgView"><input class="chgInp" type="text" name="goalFrwg" id="goalFrwg" style="width: 50px !important; text-align:center;" value="7" title="목표 체중(kg)"></td>
+										<td class="tc exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="feedEnergy" id="feedEnergy" style="width: 50px !important; text-align:center;" value="4000" title="사료 에너지"></td>
+										<td class="tc emergAnimalView exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="emergAnimal" id="emergAnimal" style="width: 50px !important; text-align:center;" value="1" title="신생동물(마리)"></td>
+										<td class="tc stageOfLactationView exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="stageOfLactation" id="stageOfLactation" style="width: 50px !important; text-align:center;" value="1" title="비유기(주차)"></td>
+										<td class="tc expectMtrtyFrwgView exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="expectMtrtyFrwg" id="expectMtrtyFrwg" style="width: 50px !important; text-align:center;" value="10" title="예상 성숙 체중(kg)"></td>
+										<td class="tc actDgreeView exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="actDgree" id="actDgree" style="width: 50px !important; text-align:center;" value="" title="활동정도"></td>
+										<td class="tc exclExceptArea" style="display:none"><input class="chgInp" type="text" name="mitrContLwlyr" id="mitrContLwlyr" style="width: 50px !important; text-align:center;" value="40" title="수분함량(%) 하한"></td>
+										<td class="tc"><input class="chgInp" type="text" name="mxnCpcty" id="mxnCpcty" style="width: 50px !important; text-align:center;" value="0.5" title="배합기 용량"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!--입력표에서 삭제된 항목 td class="txt-c"><input type="text" name="mitrContUplmt" id="mitrContUplmt" style="width: 50px !important; text-align:center;" value="80" title="수분함량(%) 상한" /></td-->
+
+					<div class="btn-area">
+						<a href="#" onclick="javascript:;" class="btn-2" title="프로그램 설명서"><span>프로그램 설명서</span></a>
+						<a href="#" onclick="javascript:window.print(); return false;" class="btn-2" title="출력"><span>출력</span></a>
+						<a href="#" onclick="javascript:feedExcelDownload(); return false;" class="btn-2" title="엑셀다운로드"><span>엑셀다운로드</span></a>
+						<a href="#" onclick="javascript:fncNutrientView(); return false;" id="nutrientView" class="btn-2" title="펼쳐보기"><span>펼쳐보기</span></a>
+						<a href="#" onclick="javascript:fncMxnCtCalcPage();return false;" class="btn-2" title="영양소 계산"><span>배합량 계산 가기</span></a>
+					</div>
+
+					<!-- ------------------------------------------------------------ -->
+					<div><hr/></div>
+					<form name="inputForm" id="inputForm" method="post">
+						<input type="hidden" name="bw" id="bw" value="0.75">
+						<input type="hidden" name="growthActStep" id="growthActStep" value="">
+						<input type="hidden" name="expectMtrtyFrwgFmle" id="expectMtrtyFrwgFmle" value="">
+						<input type="hidden" name="expectMtrtyFrwgMl" id="expectMtrtyFrwgMl" value="">
+						<div class="board-list02">
+							<p class="f-bold">ㆍ영양소 정보</p>
+							<div class="">
+								<div class="tbl-type01 list mt5" id="excelExport2">
+									<table>
+										<caption>영양소 정보 표</caption>
+										<colgroup>
+												<col style="width:14%">
+												<col style="width:19%">
+												<col style="width:14%">
+												<col style="width:19%">
+												<col style="width:14%">
+												<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">사료급여량(g)</th>
+												<td><input type="text" class="chgInp" name="nutrient2_3" id="nutrient2_3" style="width: 100px !important; text-align:center; background:#f1f1f1;" value="" title="영양소공급량" readonly="readonly"></td>
+												<th scope="row">건물섭취량(g)</th>
+												<td><input type="text" class="chgInp" name="nutrient3_3" id="nutrient3_3" style="width: 100px !important; text-align:center; background:#f1f1f1;" value="" title="영양소공급량" readonly="readonly"></td>
+												<th scope="row">수분함량(%)<br><span style="font-size: 9px;">*조정값에 따라 배합상태 변동가능</span></th>
+												<td><input type="text" class="chgInp" name="nutrient4_3" id="nutrient4_3" onkeyup="javascript:fncTransNutrient1();" style="width: 100px !important; text-align:center; " value="" title="영양소공급량"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<!-- ------------------------------------------------------------ -->
+						<div><hr/></div>
+						<div class="board-list02" id="nutrient" style="display:none;">
+							<div class="wp65 fl">
+								<div class="tbl-type01 list mt5" id="excelExport3">
+									<table class="new" id="nutrientTable">
+										<!-- <caption>반려동물 사료배합비 작성지원 프로그램 영양소정보 표</caption> -->
+										<colgroup>
+												<col style="width:32%">
+												<col style="width:13%">
+												<col style="width:13%">
+												<col style="width:13%">
+												<col style="width:13%">
+												<col style="width:13%">
+												<col style="width:10%;display:none;">
+												<col style="width:3%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" rowspan="2"><p class="mt20">항목</p><p class="txt-r exclExceptArea"><label for="chkAll">주식</label>&nbsp;<input type="checkbox" name="chkAll" id="chkAll" checked="checked"></p></th>
+												<th scope="col" rowspan="2">영양소<br>요구량</th>
+												<th scope="col" colspan="2">요구량 제한(%요구량)</th>
+												<th scope="col" rowspan="2">영양소<br>공급량</th>
+												<th scope="col" rowspan="2">편차</th>
+												<th scope="col" rowspan="2" style="display:none;" class="exclExceptArea">영양소<br>함량(%)</th>
+												<th scope="col" rowspan="2">상태</th>
+											</tr>
+											<tr>
+												<th scope="col" style="border-left:1px solid #dedede;">최소</th>
+												<th scope="col">최대</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr style="display:none;" class="exclExceptArea">
+												<td class="txt-r">사료급여량(g)</td>
+												<td class="txt-c"><input class="chgInp" type="text" name="nutrient2" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="사료급여량(g) - 영양소요구량" readonly="readonly"></td>
+												<td class="txt-c"><input class="chgInp" type="text" name="nutrient2" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="사료급여량(g) - 요구량 제한(%요구량) 최소" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient2" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="사료급여량(g) - 요구량 제한(%요구량) 최대" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient2" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="사료급여량(g) - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient2" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="사료급여량(g) - 편차" readonly="readonly"></td>
+												<td class="tc" style="display:none;"><input class="chgInp" type="text" name="nutrient2" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="사료급여량(g) - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient2" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="사료급여량(g) - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+											<tr style="display:none;" class="exclExceptArea">
+												<td class="txt-r">건물섭취량(g)</td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient3" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="건물섭취량(g) - 영양소요구량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient3" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="건물섭취량(g) - 요구량 제한(%요구량) 최소" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient3" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="건물섭취량(g) - 요구량 제한(%요구량) 최대" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient3" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="건물섭취량(g) - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient3" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="건물섭취량(g) - 편차" readonly="readonly"></td>
+												<td class="tc" style="display:none;"><input class="chgInp" type="text" name="nutrient3" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="건물섭취량(g) - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient3" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="건물섭취량(g) - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+											<tr>
+												<td class="txt-r"><label for="nutrientChk_1">수분함량(%)</label>&nbsp;<input class="chgChb" type="checkbox" name="nutrientChk" id="nutrientChk_1" value="nutrient1"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient1" onkeyup="javascript:fncTransNutrient4();" style="width: 70px !important; padding: 0 !important; text-align:center;" value="40" title="수분함량(%) - 영양소요구량"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient1" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="수분함량(%) - 요구량 제한(%요구량) 최소"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient1" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="수분함량(%) - 요구량 제한(%요구량) 최대"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient1" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="수분함량(%) - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient1" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="수분함량(%) - 편차" readonly="readonly"></td>
+												<td class="txt-c exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="nutrient1" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="수분함량(%) - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient1" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="수분함량(%) - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+											<tr>
+												<td class="txt-r"><label for="nutrientChk_5">단백질(g), 건물</label>&nbsp;<input class="chgChb" type="checkbox" name="nutrientChk" id="nutrientChk_5" value="nutrient5" checked="checked"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient5" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="단백질(g), 건물 - 영양소요구량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient5" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="단백질(g), 건물 - 요구량 제한(%요구량) 최소"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient5" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="단백질(g), 건물 - 요구량 제한(%요구량) 최대"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient5" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="단백질(g), 건물 - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient5" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="단백질(g), 건물 - 편차" readonly="readonly"></td>
+												<td class="txt-c exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="nutrient5" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="단백질(g), 건물 - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient5" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="단백질(g), 건물 - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+											<tr>
+												<td class="tr"><label for="nutrientChk_6">트립토판(g), 건물</label>&nbsp;<input class="chgChb" type="checkbox" name="nutrientChk" id="nutrientChk_6" value="nutrient6" checked="checked"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient6" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="트립토판(g), 건물 - 영양소요구량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient6" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="트립토판(g), 건물 - 요구량 제한(%요구량) 최소"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient6" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="트립토판(g), 건물 - 요구량 제한(%요구량) 최대"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient6" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="트립토판(g), 건물 - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient6" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="트립토판(g), 건물 - 편차" readonly="readonly"></td>
+												<td class="txt-c exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="nutrient6" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="트립토판(g), 건물 - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient6" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="트립토판(g), 건물 - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+											<tr>
+												<td class="tr"><label for="nutrientChk_7">칼슘(g), 건물</label>&nbsp;<input class="chgChb" type="checkbox" name="nutrientChk" id="nutrientChk_7" value="nutrient7" checked="checked"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient7" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="칼슘(g), 건물 - 영양소요구량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient7" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="칼슘(g), 건물 - 요구량 제한(%요구량) 최소"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient7" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="칼슘(g), 건물 - 요구량 제한(%요구량) 최대"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient7" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="칼슘(g), 건물 - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient7" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="칼슘(g), 건물 - 편차" readonly="readonly"></td>
+												<td class="txt-c exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="nutrient7" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="칼슘(g), 건물 - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient7" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="칼슘(g), 건물 - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+											<tr>
+												<td class="tr"><label for="nutrientChk_8">인(g), 건물</label>&nbsp;<input class="chgChb" type="checkbox" name="nutrientChk" id="nutrientChk_8" value="nutrient8" checked="checked"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient8" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="인(g), 건물 - 영양소요구량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient8" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="인(g), 건물 - 요구량 제한(%요구량) 최소"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient8" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="인(g), 건물 - 요구량 제한(%요구량) 최대"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient8" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="인(g), 건물 - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient8" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="인(g), 건물 - 편차" readonly="readonly"></td>
+												<td class="txt-c exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="nutrient8" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="인(g), 건물 - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient8" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="인(g), 건물 - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+											<tr>
+												<td class="tr"><label for="nutrientChk_10">지방(g), 건물</label>&nbsp;<input class="chgChb" type="checkbox" name="nutrientChk" id="nutrientChk_10" value="nutrient10" checked="checked"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient10" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="지방(g), 건물 - 영양소요구량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient10" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="지방(g), 건물 - 요구량 제한(%요구량) 최소"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient10" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="지방(g), 건물 - 요구량 제한(%요구량) 최대"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient10" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="지방(g), 건물 - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient10" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="지방(g), 건물 - 편차" readonly="readonly"></td>
+												<td class="txt-c exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="nutrient10" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="지방(g), 건물 - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient10" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="지방(g), 건물 - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+											<tr>
+												<td class="tr"><label for="nutrientChk_14">나트륨(g), 건물</label>&nbsp;<input class="chgChb" type="checkbox" name="nutrientChk" id="nutrientChk_14" value="nutrient14" checked="checked"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient14" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="나트륨(g), 건물 - 영양소요구량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient14" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="나트륨(g), 건물 - 요구량 제한(%요구량) 최소"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient14" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="나트륨(g), 건물 - 요구량 제한(%요구량) 최대"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient14" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="나트륨(g), 건물 - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient14" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="나트륨(g), 건물 - 편차" readonly="readonly"></td>
+												<td class="txt-c exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="nutrient14" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="나트륨(g), 건물 - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient14" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="나트륨(g), 건물 - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+											<tr>
+												<td class="tr"><label for="nutrientChk_15">칼륨(g), 건물</label>&nbsp;<input class="chgChb" type="checkbox" name="nutrientChk" id="nutrientChk_15" value="nutrient15" checked="checked"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient15" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="칼륨(g), 건물 - 영양소요구량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient15" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="칼륨(g), 건물 - 요구량 제한(%요구량) 최소"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient15" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="칼륨(g), 건물 - 요구량 제한(%요구량) 최대"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient15" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="칼륨(g), 건물 - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient15" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="칼륨(g), 건물 - 편차" readonly="readonly"></td>
+												<td class="txt-c exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="nutrient15" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="칼륨(g), 건물 - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient15" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="칼륨(g), 건물 - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+											<tr>
+												<td class="tr"><label for="nutrientChk_11">리놀레산(g), 건물</label>&nbsp;<input class="chgChb" type="checkbox" name="nutrientChk" id="nutrientChk_11" value="nutrient11" checked="checked"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient11" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="리놀레산(g), 건물 - 영양소요구량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient11" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="리놀레산(g), 건물 - 요구량 제한(%요구량) 최소"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient11" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="리놀레산(g), 건물 - 요구량 제한(%요구량) 최대"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient11" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="리놀레산(g), 건물 - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient11" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="리놀레산(g), 건물 - 편차" readonly="readonly"></td>
+												<td class="txt-c exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="nutrient11" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="리놀레산(g), 건물 - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient11" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="리놀레산(g), 건물 - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+											<tr>
+												<td class="tr"><label for="nutrientChk_13">비타민 A(RE), 건물</label>&nbsp;<input class="chgChb" type="checkbox" name="nutrientChk" id="nutrientChk_13" value="nutrient13" checked="checked"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient13" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="비타민 A(RE), 건물 - 영양소요구량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient13" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="비타민 A(RE), 건물 - 요구량 제한(%요구량) 최소"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient13" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="비타민 A(RE), 건물 - 요구량 제한(%요구량) 최대"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient13" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="비타민 A(RE), 건물 - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient13" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="비타민 A(RE), 건물 - 편차" readonly="readonly"></td>
+												<td class="txt-c exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="nutrient13" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="비타민 A(RE), 건물 - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient13" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="비타민 A(RE), 건물 - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+											<tr>
+												<td class="tr">리놀렌산(g), 건물</td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient12" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="리놀렌산(g), 건물 - 영양소요구량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient12" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="리놀렌산(g), 건물 - 요구량 제한(%요구량) 최소"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient12" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="리놀렌산(g), 건물 - 요구량 제한(%요구량) 최대"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient12" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="리놀렌산(g), 건물 - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient12" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="리놀렌산(g), 건물 - 편차" readonly="readonly"></td>
+												<td class="txt-c exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="nutrient12" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="리놀렌산(g), 건물 - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient12" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="리놀렌산(g), 건물 - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+											<tr>
+												<td class="tr">마그네슘(g), 건물</td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient19" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="마그네슘(g), 건물 - 영양소요구량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient19" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="마그네슘(g), 건물 - 요구량 제한(%요구량) 최소"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient19" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="마그네슘g), 건물 - 요구량 제한(%요구량) 최대"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient19" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="마그네슘(g), 건물 - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient19" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="마그네슘(g), 건물 - 편차" readonly="readonly"></td>
+												<td class="txt-c exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="nutrient19" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="마그네슘(g), 건물 - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient19" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="마그네슘(g), 건물 - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+											<tr>
+												<td class="tr"><label for="nutrientChk_16">총식이섬유(g), 건물</label>&nbsp;<input class="chgChb exclExceptArea" style="display: none;" type="checkbox" name="nutrientChk" id="nutrientChk_16" value="nutrient16"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient16" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="총식이섬유(%), 건물 - 영양소요구량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient16" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="총식이섬유(%), 건물 - 요구량 제한(%요구량) 최소"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient16" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="총식이섬유(%), 건물 - 요구량 제한(%요구량) 최대"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient16" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="총식이섬유(%), 건물 - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient16" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="총식이섬유(%), 건물 - 편차" readonly="readonly"></td>
+												<td class="txt-c exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="nutrient16" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="총식이섬유(%), 건물 - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient16" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="총식이섬유(%), 건물 - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+											<tr>
+												<td class="tr"><label for="nutrientChk_17">불용성식이섬유(g), 건물</label>&nbsp;<input class="chgChb exclExceptArea" style="display: none;" type="checkbox" name="nutrientChk" id="nutrientChk_17" value="nutrient17"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient17" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="불용성식이섬유(g), 건물 - 영양소요구량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient17" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="불용성식이섬유(g), 건물 - 요구량 제한(%요구량) 최소"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient17" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="불용성식이섬유(g), 건물 - 요구량 제한(%요구량) 최대"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient17" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="불용성식이섬유(g), 건물 - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient17" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="불용성식이섬유(g), 건물 - 편차" readonly="readonly"></td>
+												<td class="txt-c exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="nutrient17" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="불용성식이섬유(g), 건물 - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient17" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="불용성식이섬유(g), 건물 - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+											<tr>
+												<td class="tr"><label for="nutrientChk_18">수용성식이섬유(g), 건물</label>&nbsp;<input class="chgChb exclExceptArea" style="display: none;" type="checkbox" name="nutrientChk" id="nutrientChk_18" value="nutrient18"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient18" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="수용성식이섬유(g), 건물 - 영양소요구량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient18" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="수용성식이섬유(g), 건물 - 요구량 제한(%요구량) 최소"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient18" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="수용성식이섬유(g), 건물 - 요구량 제한(%요구량) 최대"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient18" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="수용성식이섬유(g), 건물 - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient18" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="수용성식이섬유(g), 건물 - 편차" readonly="readonly"></td>
+												<td class="txt-c exclExceptArea" style="display:none;"><input class="chgInp" type="text" name="nutrient18" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="수용성식이섬유(g), 건물 - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input class="chgInp" type="text" name="nutrient18" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="수용성식이섬유(g), 건물 - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+											<tr style="display:none;" class="exclExceptArea">
+												<td class="tr">축수산물비율(%), 건물</td>
+												<td class="tc"><input type="text" name="nutrient4" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="축수산물비율(%), 건물 - 영양소요구량"></td>
+												<td class="tc"><input type="text" name="nutrient4" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="축수산물비율(%), 건물 - 요구량 제한(%요구량) 최소"></td>
+												<td class="tc"><input type="text" name="nutrient4" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="축수산물비율(%), 건물 - 요구량 제한(%요구량) 최대"></td>
+												<td class="tc"><input type="text" name="nutrient4" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="축수산물비율(%), 건물 - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input type="text" name="nutrient4" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="축수산물비율(%), 건물 - 편차" readonly="readonly"></td>
+												<td class="tc" style="display:none;"><input type="text" name="nutrient4" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="축수산물비율(%), 건물 - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input type="text" name="nutrient4" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="축수산물비율(%), 건물 - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+											<tr style="display:none;" class="exclExceptArea">
+												<td class="tr">칼슘/인</td>
+												<td class="tc"><input type="text" name="nutrient9" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="칼슘/인 - 영양소요구량"></td>
+												<td class="tc"><input type="text" name="nutrient9" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="칼슘/인 - 요구량 제한(%요구량) 최소"></td>
+												<td class="tc"><input type="text" name="nutrient9" style="width: 70px !important; padding: 0 !important; text-align:center;" value="" title="칼슘/인 - 요구량 제한(%요구량) 최대"></td>
+												<td class="tc"><input type="text" name="nutrient9" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="칼슘/인 - 영양소 공급량" readonly="readonly"></td>
+												<td class="tc"><input type="text" name="nutrient9" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="칼슘/인 - 편차" readonly="readonly"></td>
+												<td class="tc" style="display:none;"><input type="text" name="nutrient9" style="width: 70px !important; padding: 0 !important; text-align:center; background:#f1f1f1;" value="" title="칼슘/인 - 영양소 함량(%)" readonly="readonly"></td>
+												<td class="tc"><input type="text" name="nutrient9" style="width: 70px !important; padding: 0 !important; text-align:center; background:#ffffff; border-color:#ffffff;" value="" title="칼슘/인 - 잠재가(원/단위)" readonly="readonly"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<div class="tbl-type01 list mt5 tb2 wp30 fr">
+								<div id="excelExport4">
+									<table class="new" style="border-right:1px solid #dedede !important;" id="nutrientTable2">
+										<!-- <caption>반려동물 사료배합비 작성지원 프로그램 영양소정보 표</caption> -->
+										<colgroup>
+												<col style="width:27%">
+												<col style="width:18%">
+												<col style="width:18%">
+												<col style="width:18%">
+												<col style="width:19%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" style="height:46px !important;">&nbsp;</th>
+												<th scope="col">원물<br>(g/kg)</th>
+												<th scope="col">원물<br>(%)</th>
+												<th scope="col">건물<br>(%)</th>
+												<th scope="col">칼슘/인</th>
+											</tr>
+										</thead>
+										<tbody id="excelExport4Iner">
+											<tr>
+												<th scope="row" class="tc">조단백질</th>
+												<td class="tc" id="protAsFedSum"></td>
+												<td class="tc" id="protAsFedRate"></td>
+												<td class="tc" id="protDm"></td>
+												<td class="tc" rowspan="6" id="caP"></td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc">조지방</th>
+												<td class="tc" id="fatAsFedSum"></td>
+												<td class="tc" id="fatAsFedRate"></td>
+												<td class="tc" id="fatDm"></td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc">조섬유</th>
+												<td class="tc" id="crfbAsFedSum"></td>
+												<td class="tc" id="crfbAsFedRate"></td>
+												<td class="tc" id="crfbDm"></td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc">조회분</th>
+												<td class="tc" id="ashsAsFedSum"></td>
+												<td class="tc" id="ashsAsFedRate"></td>
+												<td class="tc" id="ashsDm"></td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc">수분</th>
+												<td class="tc" id="mitrAsFedSum"></td>
+												<td class="tc" id="mitrAsFedRate"></td>
+												<td class="tc" id="mitrDm"></td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc" title="NFE">탄수화물</th>
+												<td class="tc" id="nfeAsFedSum"></td>
+												<td class="tc" id="nfeAsFedRate"></td>
+												<td class="tc" id="nfeDm"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div>
+									<table class="new mt10 tb2" style="border-top:1px solid #dedede !important; border-right:1px solid #dedede !important;" id="nutrientTable3">
+										<!-- <caption>반려동물 사료배합비 작성지원 프로그램 영양소정보 표</caption> -->
+										<colgroup>
+												<col style="width:28%">
+												<col style="width:18%">
+												<col style="width:18%">
+												<col style="width:18%">
+												<col style="width:18%">
+										</colgroup>
+										<tbody id="excelExport5">
+											<tr>
+												<th scope="row" class="tc">사료에너지</th>
+												<td class="tc">-</td>
+												<td class="tc" id="meDietAsFed" title="kcal/kg"></td>
+												<td class="tc" id="meDietDm" title="kcal/kg"></td>
+												<td class="tc" style="border-top: solid 1px #ffffff; border-right: solid 1px #ffffff;"></td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc" rowspan="2">단백질</th>
+												<td class="tc">-</td>
+												<td class="tc" id="byProteinAsFed" title="kcal/kg"></td>
+												<td class="tc" id="byProteinDm" title="kcal/kg"></td>
+												<td class="tc" id="byProteinEtc"></td>
+											</tr>
+											<tr>
+												<td class="tc" colspan="3"><div id="slider-range1" class="mt10 exclExceptArea"></div></td>
+												<td class="tc"><input class="chgInp" type="text" id="byProteinDmSet" name="byProteinDmSet" style="width: 28px !important; padding: 0 !important; text-align:center;" value="3.5" title="byProteinDmSet 값">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc" rowspan="2">지방</th>
+												<td class="tc">-</td>
+												<td class="tc" id="byFatAsFed" title="kcal/kg"></td>
+												<td class="tc" id="byFatDm" title="kcal/kg"></td>
+												<td class="tc" id="byFatEtc"></td>
+											</tr>
+											<tr>
+												<td class="tc" colspan="3"><div id="slider-range2" class="mt10 exclExceptArea"></div></td>
+												<td class="tc"><input class="chgInp" type="text" id="byFatDmSet" name="byFatDmSet" style="width: 28px !important; padding: 0 !important; text-align:center;" value="8.5" title="byFatDmSet 값"></td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc" rowspan="2">탄수화물</th>
+												<td class="tc">-</td>
+												<td class="tc" id="byNfeAsFed" title="kcal/kg"></td>
+												<td class="tc" id="byNfeDm" title="kcal/kg"></td>
+												<td class="tc" id="byNfeEtc"></td>
+											</tr>
+											<tr>
+												<td class="tc" colspan="3"><div id="slider-range3" class="mt10 exclExceptArea"></div></td>
+												<td class="tc"><input class="chgInp" type="text" id="byNfeDmSet" name="byNfeDmSet" style="width: 28px !important; padding: 0 !important; text-align:center;" value="3.5" title="byNfeDmSet 값"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div>
+									<table class="new mt10 tb2" style="border-top:1px solid #dedede !important; border-right:1px solid #dedede !important;" id="nutrientTable4">
+										<!-- <caption>반려동물 사료배합비 작성지원 프로그램 영양소정보 표</caption> -->
+										<colgroup>
+												<col style="width:28%">
+												<col style="width:18%">
+												<col style="width:18%">
+												<col style="width:18%">
+												<col style="width:18%">
+										</colgroup>
+										<tbody id="excelExport6">
+											<tr>
+												<th scope="row" class="tc">트립토판</th>
+												<td class="tc" id="trypAsFedSum"></td>
+												<td class="tc" id="trypAsFedRate"></td>
+												<td class="tc" id="trypDm"></td>
+												<td class="tc" style="border-top: solid 1px #ffffff; border-right: solid 1px #ffffff; border-bottom: solid 1px #ffffff;"></td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc">칼슘</th>
+												<td class="tc" id="clciAsFedSum"></td>
+												<td class="tc" id="clciAsFedRate"></td>
+												<td class="tc" id="clciDm"></td>
+												<td class="tc" style="border-top: solid 1px #ffffff; border-right: solid 1px #ffffff; border-bottom: solid 1px #ffffff;"></td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc">인</th>
+												<td class="tc" id="phphAsFedSum"></td>
+												<td class="tc" id="phphAsFedRate"></td>
+												<td class="tc" id="phphDm"></td>
+												<td class="tc" style="border-top: solid 1px #ffffff; border-right: solid 1px #ffffff; border-bottom: solid 1px #ffffff;"></td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc">리놀레산</th>
+												<td class="tc" id="lnacAsFedSum"></td>
+												<td class="tc" id="lnacAsFedRate"></td>
+												<td class="tc" id="lnacDm"></td>
+												<td class="tc" style="border-top: solid 1px #ffffff; border-right: solid 1px #ffffff; border-bottom: solid 1px #ffffff;"></td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc">리놀렌산</th>
+												<td class="tc" id="liacAsFedSum"></td>
+												<td class="tc" id="liacAsFedRate"></td>
+												<td class="tc" id="liacDm"></td>
+												<td class="tc" style="border-top: solid 1px #ffffff; border-right: solid 1px #ffffff; border-bottom: solid 1px #ffffff;"></td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc">비타민 A</th>
+												<td class="tc" id="vtmaAsFedSum"></td>
+												<td class="tc" id="vtmaAsFedRate"></td>
+												<td class="tc" id="vtmaDm"></td>
+												<td class="tc" style="border-top: solid 1px #ffffff; border-right: solid 1px #ffffff; border-bottom: solid 1px #ffffff;"></td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc">나트륨</th>
+												<td class="tc" id="naAsFedSum"></td>
+												<td class="tc" id="naAsFedRate"></td>
+												<td class="tc" id="naDm"></td>
+												<td class="tc" style="border-top: solid 1px #ffffff; border-right: solid 1px #ffffff; border-bottom: solid 1px #ffffff;"></td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc">칼륨</th>
+												<td class="tc" id="ptssAsFedSum"></td>
+												<td class="tc" id="ptssAsFedRate"></td>
+												<td class="tc" id="ptssDm"></td>
+												<td class="tc" style="border-top: solid 1px #ffffff; border-right: solid 1px #ffffff; border-bottom: solid 1px #ffffff;"></td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc">마그네슘</th>
+												<td class="tc" id="mgmAsFedSum"></td>
+												<td class="tc" id="mgmAsFedRate"></td>
+												<td class="tc" id="mgmDm"></td>
+												<td class="tc" style="border-top: solid 1px #ffffff; border-right: solid 1px #ffffff; border-bottom: solid 1px #ffffff;"></td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc">총식이섬유</th>
+												<td class="tc" id="totEdblfibrAsFedSum"></td>
+												<td class="tc" id="totEdblfibrAsFedRate"></td>
+												<td class="tc" id="totEdblfibrDm"></td>
+												<td class="tc" style="border-top: solid 1px #ffffff; border-right: solid 1px #ffffff; border-bottom: solid 1px #ffffff;"></td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc" style="letter-spacing: -2px !important;">불용성식이섬유</th>
+												<td class="tc" id="inslbltyEdblfibrAsFedSum"></td>
+												<td class="tc" id="inslbltyEdblfibrAsFedRate"></td>
+												<td class="tc" id="inslbltyEdblfibrDm"></td>
+												<td class="tc" style="border-top: solid 1px #ffffff; border-right: solid 1px #ffffff; border-bottom: solid 1px #ffffff;"></td>
+											</tr>
+											<tr>
+												<th scope="row" class="tc" style="letter-spacing: -2px !important;">수용성식이섬유</th>
+												<td class="tc" id="slwtEdblfibrAsFedSum"></td>
+												<td class="tc" id="slwtEdblfibrAsFedRate"></td>
+												<td class="tc" id="slwtEdblfibrDm"></td>
+												<td class="tc" style="border-top: solid 1px #ffffff; border-right: solid 1px #ffffff; border-bottom: solid 1px #ffffff;"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<!-- ------------------------------------------------------------ -->
+						<div><hr/></div>
+						<div class="board-list02 clear">
+							<p class="f-bold">ㆍ배합비</p>
+							<div class="tbl-type01 list tbl_feedMix mt5" id="excelExport7">
+								<table class="new" id="mxnCtCalcTable">
+									<!-- <caption>반려동물 사료배합비 작성지원 프로그램 배합비정보 표</caption> -->
+									<colgroup>
+											<col style="width:16%">
+											<col style="width:10%">
+											<col style="width:8%">
+											<col style="width:11%">
+											<col style="width:11%">
+											<col style="width:10%">
+											<col style="width:7%">
+											<col style="width:7%">
+											<col style="width:10%">
+											<col style="width:10%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" rowspan="2">원료명</th>
+											<th scope="col" rowspan="2">원료 가격<br>(원/kg)</th>
+											<th scope="col" rowspan="2">수분(%)</th>
+											<th scope="col" colspan="2">배합량(g)</th>
+											<th scope="col" rowspan="2">배합비<br>(%)</th>
+											<th scope="col" colspan="2">원료 사용 제한(%)</th>
+											<th scope="col" colspan="2">금액(원/kg)</th>
+										</tr>
+										<tr>
+											<th scope="col" style="border-left:1px solid #def0f4;">일일 두당</th>
+											<th scope="col">1회분</th>
+											<th scope="col">최소</th>
+											<th scope="col">최대</th>
+											<th scope="col">원물</th>
+											<th scope="col">수분<br>12%기준</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="tc">합계</td>
+											<td class="tc">&nbsp;</td>
+											<td class="tc">&nbsp;</td>
+											<td class="tc">
+												<label for="rawMaterialPerSum" class="skip">배합량(g) 일일 두당 합계</label>
+												<input class="chgInp" type="text" name="rawMaterialPerSum" id="rawMaterialPerSum" style="width: 40px !important; text-align:center; background:#f1f1f1;" value="0" readonly="readonly">
+											</td>
+											<td class="tc">
+												<label for="rawMaterialPerOneSum" class="skip">배합량(g) 1회분 합계</label>
+												<input class="chgInp" type="text" name="rawMaterialPerOneSum" id="rawMaterialPerOneSum" style="width: 40px !important; text-align:center; background:#f1f1f1;" value="0" readonly="readonly">
+											</td>
+											<td class="tc">
+												<label for="rawMaterialRateSum" class="skip">배합비(%) 합계</label>
+												<input class="chgInp" type="text" name="rawMaterialRateSum" id="rawMaterialRateSum" style="width: 30px !important; text-align:center; background:#f1f1f1;" value="0" readonly="readonly">
+											</td>
+											<td class="tc">&nbsp;</td>
+											<td class="tc">&nbsp;</td>
+											<td class="tc">
+												<label for="orginlPcSum" class="skip">금액(원/kg) 원물 합계</label>
+												<input class="chgInp" type="text" name="orginlPcSum" id="orginlPcSum" style="width: 30px !important; text-align:center; background:#f1f1f1;" value="0" readonly="readonly">
+											</td>
+											<td class="tc">
+												<label for="airDryMatterSum" class="skip">금액(원/kg) 풍건물(12%) 합계</label>
+												<input class="chgInp" type="text" name="airDryMatterSum" id="airDryMatterSum" style="width: 30px !important; text-align:center; background:#f1f1f1;" value="0" readonly="readonly">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						</form>
+
+						<div class="pop-area" id="divPop" style="display:none;">
+							<!-- pop-bx -->
+							<div class="pop-bx">
+								<!-- 콘텐츠 영역 -->
+								<div class="con-bx"></div>
+								<!-- 콘텐츠 영역 -->
+							</div>
+							<!-- //pop-bx -->
+
+							<!-- 버튼영역 -->
+							<!-- 
+							<div class="tc mt50">
+								<a href="#1" class="btn-2-w" onclick='javascript:fncRawMaterialDel();'><span>초기화</span></a>
+								<a href="#1" class="btn-2-w" onclick='javascript:fncRawMaterialChoiceValue();'><span>적용</span></a>
+								<a href="#1" class="btn-2-w" onclick=' $( "#divPop" ).dialog( "close" );'><span>닫기</span></a>
+							</div>
+							-->
+							<!-- //버튼영역 -->
+						</div>
+					</div>
+					<iframe id="txtArea1" style="display:none" title="엑셀저장"></iframe>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../static/landing/js/pet_infomation.js"></script>
+		<script type="text/javascript">
+// ================================================================================
+//<![CDATA[
+//var feedSeqNoArr = ["0", "297", "300", "296", "301", "303", "304", "295", "294", "299", "298", "302", "308", "307", "306", "305"];
+//rawMaterialDefLst//관리자가 셋팅한거
+var feedSeqNoArr = ["0"];
+var feedSeqNoDefArr = [];
+var feedSeqNoDefArrNm = [];
+
+feedSeqNoArr[1] = "294";
+feedSeqNoDefArr[0] = "294";
+feedSeqNoDefArrNm[0] = "난황분말";
+
+feedSeqNoArr[2] = "297";
+feedSeqNoDefArr[1] = "297";
+feedSeqNoDefArrNm[1] = "파래분말";
+
+feedSeqNoArr[3] = "332";
+feedSeqNoDefArr[2] = "332";
+feedSeqNoDefArrNm[2] = "반려동물 집밥 영양제";
+
+feedSeqNoArr[4] = "338";
+feedSeqNoDefArr[3] = "338";
+feedSeqNoDefArrNm[3] = "소금, 식용";
+
+feedSeqNoArr[5] = "342";
+feedSeqNoDefArr[4] = "342";
+feedSeqNoDefArrNm[4] = "구연산칼륨";
+
+feedSeqNoArr[6] = "2";
+feedSeqNoDefArr[5] = "2";
+feedSeqNoDefArrNm[5] = "멥쌀가공(밥, 죽류), 백미, 밥";
+
+feedSeqNoArr[7] = "176";
+feedSeqNoDefArr[6] = "176";
+feedSeqNoDefArrNm[6] = "닭고기, 가슴살, 생것";
+
+feedSeqNoArr[8] = "349";
+feedSeqNoDefArr[7] = "349";
+feedSeqNoDefArrNm[7] = "탄산칼슘";
+
+feedSeqNoArr[9] = "351";
+feedSeqNoDefArr[8] = "351";
+feedSeqNoDefArrNm[8] = "제1인산칼슘";
+
+var firCalculFalg = true;
+
+$(document).ready(function(){
+	cfSetEvent(fncSearch,['sText']);
+
+	// 동물 선택
+	$("button[name=animalSeCode]").click(function(){
+		// 동물 active 제거 후 추가
+		$("button[name=animalSeCode]").removeClass("active");
+		$("button[name=animalSeCode]").parent().removeClass("active");
+		$(this).addClass("active");
+		$(this).parent().addClass("active");
+
+		// 동물
+		fncAnimal($(this).val());
+
+		// 품종선택 초기화
+		$("#sText").val("");
+
+		if($(this).val() == "400001"){
+			$("#species2Html").html("<a href='#'>자견</a>&nbsp;<a href='#' class='active'>성견</a>");
+		}else{
+			$("#species2Html").html("<a href='#'>자묘</a>&nbsp;<a href='#' class='active'>성묘</a>");
+		}
+
+		// 자견/성견 선택
+		$("#species2Html > a").click(function(){
+			$("#species2Html > a").removeClass("active");
+			$(this).addClass("active");
+
+			fncGrowthActStepLst();
+		});
+	});
+
+	// 암컷/수컷 선택
+	$("#species3Html > a").click(function(){
+		$("#species3Html > a").removeClass("active");
+		$(this).addClass("active");
+
+		fncGrowthActStepLst();
+	});
+
+	// Input 목록
+	var numberInputId = [
+		"nowFrwg", "goalFrwg", "feedEnergy", "emergAnimal", "stageOfLactation",
+		"expectMtrtyFrwg", "actDgree", "mitrContLwlyr", "mxnCpcty",
+		"nutrient1", "nutrient2", "nutrient3", "nutrient4", "nutrient5",
+		"nutrient6", "nutrient7", "nutrient8", "nutrient9", "nutrient10",
+		"nutrient11", "nutrient12", "nutrient13", "nutrient14", "nutrient15",
+		"nutrient16", "nutrient17", "nutrient18", "nutrient19","byProteinDmSet","byFatDmSet","byNfeDmSet","nutrient4_3"
+	];
+
+	// 숫자만 입력 가능, Validation 체크
+	$(numberInputId).each(function(index, value){
+		var input = "input[name=" + value + "]";
+
+		$(input).keydown(function(e){
+			if(e.keyCode == 9){ // tab key
+				return true;
+			}
+		});
+
+		$(input).keyup(function(e){
+			var inputIdx = $(input).index(this);
+
+			if(e.keyCode == 16 || e.keyCode == 36){ // shift 이거나 home key
+				return false;
+			}else if (e.keyCode == 13){ // enter key
+				if(value!="mxnCpcty"){
+					var animalTyNm = $("#growthActStepHtml > option").find("a.active").text();
+					animalTyNm = animalTyNm.substring(0, animalTyNm.indexOf("("));
+
+					if(value=="nowFrwg"){
+						if(animalTyNm=="자견" || animalTyNm=="자묘"){
+							$("#expectMtrtyFrwg").select();
+						}else{
+							$("#goalFrwg").select();
+						}
+					}else if(value=="goalFrwg"){
+						if(animalTyNm=="자견" || animalTyNm=="자묘"){
+							$("#expectMtrtyFrwg").select();
+						}else if(animalTyNm=="임신기 암캐"){
+							$("#stageOfLactation").select();
+						}else if(animalTyNm=="비유기 암캐" || animalTyNm=="비유기 암코양이"){
+							$("#emergAnimal").select();
+						}else if(animalTyNm=="힘든 활동하는 사역견"){
+							$("#actDgree").select();
+						}else{
+							$("#mitrContLwlyr").select();
+						}
+					}else if(value=="stageOfLactation" || value=="expectMtrtyFrwg"){
+						$("#mitrContLwlyr").select();
+					}else{
+						if(value.indexOf("nutrient") > -1){
+							$(input).parent().parent().next().find("td").eq(inputIdx+1).find("input").select();
+						}else{
+							$(input).eq(inputIdx).parent().next().find("input").select();
+						}
+					}
+				}
+
+    			// 입력값 확인
+    			fncValidation();
+			}else{
+				if(value=="byProteinDmSet" || value=="byFatDmSet"|| value=="byNfeDmSet"){
+					if($(input).val() > 10){
+						alert("입력값은 10 이하로 설정해야 합니다.");
+						if(value=="byFatDmSet"){
+							$(input).val("8.5");
+						}else{
+							$(input).val("3.5");
+						}
+					}
+				}
+				$(input).eq(inputIdx).val($(input).eq(inputIdx).val().replace(/[^\.0-9]/g, ''));
+			}
+		});
+	});
+
+	$("#divPop").dialog({
+		width:1200,
+		height:650,
+		modal:true,
+		title:"원료 선택",
+		autoOpen:false,
+		open: function (event, ui) {
+			$("#divPop .con-bx").html("<div style=\"position:absolute;left:50%;top:45%;margin-left:-8px;\"><img src=\"/bs/css/default/images/loading.gif\"></div>");
+			$("#divPop > td").css("height", "16px");
+			//$("html").css("overflow", "hidden");
+		    $("#divPop").scrollTop(0);
+		},
+		close: function(){
+			//$("html").css("overflow", "auto");
+		}
+		/*
+		,show:{
+			effect:"blind",
+			duration:800
+		}
+		*/
+	});
+
+	$("button[name=animalSeCode]").eq(0).trigger("click");
+
+	$("#chkAll").click(function(){
+		// Input 목록
+		var checkboxId = [
+			"nutrient5", "nutrient6", "nutrient7", "nutrient8", "nutrient10",
+			"nutrient11", "nutrient13", "nutrient14", "nutrient15"
+		];
+
+		if($(this).is(":checked")){
+			$(checkboxId).each(function(index, value){
+				var input = "input[name='nutrientChk'][value='" + value + "']";
+				$(input).prop("checked", true);
+			});
+		}else{
+			$(checkboxId).each(function(index, value){
+				var input = "input[name='nutrientChk'][value='" + value + "']";
+				$(input).prop("checked", false);
+			});
+
+			$("input[name='nutrientChk'][value='nutrient5']").prop("checked", true);
+			$("input[name='nutrientChk'][value='nutrient10']").prop("checked", true);
+		}
+	});
+});
+
+
+$(document).ready(function(){
+	var btn = $('#btnExport');
+	var tbl = 'nutrientTable1';
+	btn.on('click', function () {
+		var dt = new Date();
+		var year =  itoStr(dt.getFullYear());
+		var month = itoStr(dt.getMonth()+1);
+		var day =   itoStr(dt.getDate());
+		var hour =  itoStr(dt.getHours());
+		var mins =  itoStr(dt.getMinutes());
+		var postfix = year + month + day + hour + mins;
+		var fileName = "feed_"+ postfix + ".xls";
+		var uri = $("#"+tbl).excelexportjs({
+			containerid: tbl
+			, datatype: 'table'
+			, returnUri: true
+		});
+		$(this).attr('download', fileName).attr('href', uri).attr('target', '_blank');
+
+	});
+	var range1 = $("#slider-range1").slider({
+		range : false,
+		step : 0.1,
+		min : 0,
+		max : 10,
+		values : [0, 3.5],
+		slide : function(event, ui) {
+			$("#byProteinDmSet").val(ui.values[1]);
+			$("#slider-range1 .ui-slider-handle").eq(1).empty();
+			$("#slider-range1 .ui-slider-handle").eq(1).append('<span class="end">' + ui.values[1] + '<\/span>');
+		}
+	});
+	$("#slider-range2").slider({
+		range : false,
+		step : 0.1,
+		min : 0,
+		max : 10,
+		values : [0, 8.5],
+		slide : function(event, ui) {
+			$("#byFatDmSet").val(ui.values[1]);
+			$("#slider-range2 .ui-slider-handle").eq(1).empty();
+			$("#slider-range2 .ui-slider-handle").eq(1).append('<span class="end">' + ui.values[1] + '<\/span>');
+		}
+	});
+	$("#slider-range3").slider({
+		range : false,
+		step : 0.1,
+		min : 0,
+		max : 10,
+		values : [0, 3.5],
+		slide : function(event, ui) {
+			$("#byNfeDmSet").val(ui.values[1]);
+			$("#slider-range3 .ui-slider-handle").eq(1).empty();
+			$("#slider-range3 .ui-slider-handle").eq(1).append('<span class="end">' + ui.values[1] + '<\/span>');
+		}
+	});
+	$("#slider-range1 .ui-slider-handle").eq(1).append('<span class="end">3.5<\/span>');
+	$("#slider-range2 .ui-slider-handle").eq(1).append('<span class="end">8.5<\/span>');
+	$("#slider-range3 .ui-slider-handle").eq(1).append('<span class="end">3.5<\/span>');
+
+	$("#byProteinDmSet").keyup(function(e){
+		if($(this).val() !=''){
+			$("#slider-range1").slider("option","values", [0,$(this).val()]);
+			$("#slider-range1 .ui-slider-handle").eq(1).empty().append('<span class="end">'+$(this).val()+'<\/span>');
+		}
+	});
+	$("#byFatDmSet").keyup(function(e){
+		if($(this).val() !=''){
+			$("#slider-range2").slider("option","values", [0,$(this).val()]);
+			$("#slider-range2 .ui-slider-handle").eq(1).empty().append('<span class="end">'+$(this).val()+'<\/span>');
+		}
+	});
+	$("#byNfeDmSet").keyup(function(e){
+		if($(this).val() !=''){
+			$("#slider-range3").slider("option","values", [0,$(this).val()]);
+			$("#slider-range3 .ui-slider-handle").eq(1).empty().append('<span class="end">'+$(this).val()+'<\/span>');
+		}
+	});
+
+});
+
+// 동물
+function fncAnimal(animalSeCode){
+	// 성장ㆍ활동단계 초기화
+	$("#growthActStep").val("");
+
+	// 목표 체중, 강아지수 & 새끼고양이수, 비유기(주차), 예상 성숙 체중(kg), 활동정도 초기화
+	fncInputClear();
+
+	// 영양소 정보 초기화
+	fncNutrientClear();
+
+	// 품종 및 성장 활동 단계
+	fncSpeciesGrowthActStep(animalSeCode);
+}
+
+// 품종명 클릭시
+function fncSpecies(obj, expectMtrtyFrwgFmle, expectMtrtyFrwgMl){
+	// 예상 성숙 체중(kg)
+	$("#expectMtrtyFrwgFmle").val(expectMtrtyFrwgFmle);
+	$("#expectMtrtyFrwgMl").val(expectMtrtyFrwgMl);
+
+	if($(obj).html() == "기타"){
+		$("#speicesEtc").show();
+		$("#speicesEtc").focus();
+	}else{
+		$("#speicesEtc").hide();
+		$("#speicesEtc").val("");
+	}
+
+	// 품종 active 제거 후 추가
+	$("#speciesHtml > option").removeClass("active");
+	$(obj).addClass("active");
+
+	// 성장ㆍ활동단계 초기화
+	$("#growthActStep").val("");
+
+	// 목표 체중, 강아지수 & 새끼고양이수, 비유기(주차), 예상 성숙 체중(kg), 활동정도 초기화
+	fncInputClear();
+
+	// 영양소 정보 초기화
+	fncNutrientClear();
+
+	// 성장 활동 단계
+	fncGrowthActStepLst();
+}
+
+// 성장 활동 단계
+function fncGrowthActStep(obj, growthActStep){
+	$("#growthActStep").val(growthActStep);
+
+	// 성장ㆍ활동단계 active 제거 후 추가
+	$("#growthActStepHtml > option").removeClass("active");
+	$(obj).addClass("active");
+
+	var animalTy = $("#growthActStep").val().split("^^");
+	var animalTyNm = $(obj).text();
+	animalTyNm = animalTyNm.substring(0, animalTyNm.indexOf("("));
+
+	// 목표 체중, 강아지수 & 새끼고양이수, 비유기(주차), 예상 성숙 체중(kg), 활동정도 초기화
+	fncInputClear();
+
+	// 영양소 정보 초기화
+	fncNutrientClear();
+
+	// 활동정도
+	$("#actDgree").val(animalTy[1]);
+	//feedEnergy,bw
+	$("#feedEnergy").val(animalTy[2]);
+	$("#bw").val(animalTy[3]);
+
+	if(animalTyNm=="자견"){
+		$(".goalFrwgView").hide();
+		$(".expectMtrtyFrwgView").show();
+		$(".expectMtrtyFrwgView").removeClass("exclExceptArea");
+	}else if(animalTyNm=="자묘"){
+		$(".goalFrwgView").hide();
+		$(".expectMtrtyFrwgView").show();
+		$(".expectMtrtyFrwgView").removeClass("exclExceptArea");
+	}else if(animalTyNm=="임신기 암캐"){
+		$(".stageOfLactationView").eq(0).html("임신기<br />(주차)");
+		$(".stageOfLactationView").show();
+		$(".stageOfLactationView").removeClass("exclExceptArea");
+	}else if(animalTyNm=="비유기 암캐"){
+		$(".emergAnimalView").eq(0).html("강아지수");
+		$(".emergAnimalView").show();
+		$(".emergAnimalView").removeClass("exclExceptArea");
+		$(".stageOfLactationView").eq(0).html("비유기<br />(주차)");
+		$(".stageOfLactationView").show();
+		$(".stageOfLactationView").removeClass("exclExceptArea");
+	}else if(animalTyNm=="비유기 암코양이"){
+		$(".emergAnimalView").eq(0).html("새끼고양이수");
+		$(".emergAnimalView").show();
+		$(".emergAnimalView").removeClass("exclExceptArea");
+		$(".stageOfLactationView").eq(0).html("비유기<br />(주차)");
+		$(".stageOfLactationView").show();
+		$(".stageOfLactationView").removeClass("exclExceptArea");
+	}else if(animalTyNm=="고강도 활동 특수견"){
+		$(".actDgreeView").show();
+		$(".actDgreeView").removeClass("exclExceptArea");
+	}
+
+	// 동물 유형 정보 초기화
+	$("#protQy").val("");
+	$("#trypQy").val("");
+	$("#clciQy").val("");
+	$("#phphQy").val("");
+	$("#fatQy").val("");
+	$("#lnacQy").val("");
+	$("#liacQy").val("");
+	$("#vtmaQy").val("");
+	$("#naQy").val("");
+	$("#ptssQy").val("");
+	$("#mgmQy").val("");
+
+	if(animalTy[0]!=""){
+		// $.ajax({
+		// 	url : "/portal/ps/psx/psxf/animalTyInfo.ps",
+	    // 	type : "POST",
+	    // 	data : {animalTy : animalTy[0]},
+	    // 	dataType : "json",
+	    // 	success : function (data) {
+	    // 		var animalTyInfo = data.animalTyInfo;
+
+	    // 		if(animalTyInfo!=null){
+	    // 			$("#protQy").val(animalTyInfo.protQy);
+	    // 			$("#trypQy").val(animalTyInfo.trypQy);
+	    // 			$("#clciQy").val(animalTyInfo.clciQy);
+	    // 			$("#phphQy").val(animalTyInfo.phphQy);
+	    // 			$("#fatQy").val(animalTyInfo.fatQy);
+	    // 			$("#lnacQy").val(animalTyInfo.lnacQy);
+	    // 			$("#liacQy").val(animalTyInfo.liacQy);
+	    // 			$("#vtmaQy").val(animalTyInfo.vtmaQy);
+	    // 			$("#naQy").val(animalTyInfo.naQy);
+	    // 			$("#ptssQy").val(animalTyInfo.ptssQy);
+	    // 			$("#mgmQy").val(animalTyInfo.mgmQy);
+	    // 			//$("#feedEnergy").val(animalTyInfo.feedEnergy);
+	    // 			//$("#bw").val(animalTyInfo.bw);
+	    // 		}
+	    // 	}
+		// });
+	}
+}
+
+// 품종 및 성장 활동 단계
+function fncSpeciesGrowthActStep(animalSeCode){
+	var growthSexdstnSe;
+    // var species = $("#speciesHtml").find("a.active").text();
+    // var species = $("#speciesHtml").options[$("#speciesHtml").selectedIndex].text;
+	var species2 = $("#species2Html").find("a.active").text();
+	var species3 = $("#species3Html").find("a.active").text();
+
+	if(animalSeCode=="400001"){
+		if(species2=="자견"){
+			if(species3=="암컷") growthSexdstnSe = "413001";
+			else if(species3=="수컷") growthSexdstnSe = "413002";
+		}else if(species2=="성견"){
+			if(species3=="암컷") growthSexdstnSe = "413003";
+			else if(species3=="수컷") growthSexdstnSe = "413004";
+		}
+	}else if(animalSeCode=="400002"){
+		if(species2=="자묘"){
+			if(species3=="암컷") growthSexdstnSe = "413005";
+			else if(species3=="수컷") growthSexdstnSe = "413006";
+		}else if(species2=="성묘"){
+			if(species3=="암컷") growthSexdstnSe = "413007";
+			else if(species3=="수컷") growthSexdstnSe = "413008";
+		}
+	}
+
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// $.ajax({
+	// 	url : "/portal/ps/psx/psxf/spciesLst.ps",
+    // 	type : "POST",
+    // 	data : {
+	// 		animalSeCode : animalSeCode,
+	// 		growthSexdstnSe : growthSexdstnSe
+	// 	},
+    // 	dataType : "json",
+    // 	success : function (data) {
+	// 		var tmpHtml = "";
+
+    // 		// 품종
+    // 		if(data.speciesLst.length > 0){
+	// 			$.each(data.speciesLst, function(idx, val){
+	// 				tmpHtml += "<li><a href='#1' onclick=\"javascript:fncSpecies(this, '" + val.expectMtrtyFrwgFmle + "', '" + val.expectMtrtyFrwgMl + "'); return false;\">" + val.spciesNm + "</a></li>";
+	// 			});
+    // 		}
+
+	// 		tmpHtml += "<li style='position: relative;'><a href='#1' onclick=\"javascript:fncSpecies(this, 0, 0); return false;\">기타</a><input type='text' class='inputData' id='speicesEtc' name='speicesEtc' style='display:none;'></li>";
+
+	// 		$("#speciesHtml").html(tmpHtml);
+    //     	$("#speciesHtml > li > a").eq(0).trigger("click");
+    // 	}
+	// });
+	// ==================== 품종 리스트 업데이트
+	//
+
+	// { pse0=0; 견/묘  pse2=0; 자/성  pse3=0; 암/수 }
+	if(animalSeCode=="400001"){
+		pse0 = 0;
+		if(species2=="자견"){
+			pse2 = 0;
+			if(species3=="암컷") 		pse3=0;
+			else if(species3=="수컷") 	pse3=1;
+		}else if(species2=="성견"){
+			pse2 = 1;
+			if(species3=="암컷") 		pse3=0;
+			else if(species3=="수컷") 	pse3=1;
+		}
+	}else if(animalSeCode=="400002"){
+		pse0 = 1;
+		if(species2=="자묘"){
+			pse2 = 0;
+			if(species3=="암컷") 		pse3=0;
+			else if(species3=="수컷") 	pse3=1;
+		}else if(species2=="성묘"){
+			pse2 = 1;
+			if(species3=="암컷") 		pse3=0;
+			else if(species3=="수컷") 	pse3=1;
+		}
+	}
+    var species = pet_species[pse0][0][2]; // 초기값 첫번째 품종
+	$.each(pet_species[pse0], function(idx, val){
+		if(val[2] == species) pse1 = idx; // species
+	});
+
+	var data = {
+		animalSeCode : animalSeCode,
+		growthSexdstnSe : growthSexdstnSe
+	};
+	var tmpHtml = "";
+
+	// 품종
+	if(pet_species[pse0].length > 0){
+		$.each(pet_species[pse0], function(idx, val){
+			tmpHtml += "<option onclick=\"javascript:fncSpecies(this, '" + val[0] + "', '" + val[1] + "'); return false;\" value='" + val[2] + "'>" + val[2] + "</option>";
+		});
+	}
+
+	tmpHtml += "<option style='position: relative;' onclick=\"javascript:fncSpecies(this, 0, 0); return false;\" value='기타'>기타</option>";
+	// <input type='text' class='inputData' id='speicesEtc' name='speicesEtc' style='display:none;'> // 기타 입력 text
+
+	$("#speciesHtml").html(tmpHtml);
+	$("#speciesHtml > option").eq(0).attr("selected", "selected");
+	fncSpecies($("#speciesHtml > option").eq(0), pet_species[pse0][0][0], pet_species[pse0][0][1]);
+}
+
+// 성장 활동 단계
+function fncGrowthActStepLst(){
+	var animalSeCode = $("button[name=animalSeCode].active").val();
+	var growthSexdstnSe;
+	// var species = $("#speciesHtml").find("a.active").text();
+    // var species = $("#speciesHtml").options[$("#speciesHtml").selectedIndex].text;
+	var species2 = $("#species2Html").find("a.active").text();
+	var species3 = $("#species3Html").find("a.active").text();
+
+	// 자견 & 자묘일 경우 1kg이고 아닐 경우는 7kg
+	if(species2=="자견" || species2=="자묘"){
+		$("#nowFrwg").val("1");
+
+		if(species2=="자견"){
+			if(species3=="암컷"){
+				$("#expectMtrtyFrwg").val($("#expectMtrtyFrwgFmle").val());
+			}else{
+				$("#expectMtrtyFrwg").val($("#expectMtrtyFrwgMl").val());
+			}
+		}else{
+			$("#expectMtrtyFrwg").val($("#expectMtrtyFrwgFmle").val());
+		}
+	}else{
+		if(species2=="성견"){
+			if(species3=="암컷"){
+				$("#nowFrwg").val($("#expectMtrtyFrwgFmle").val());
+				$("#goalFrwg").val($("#expectMtrtyFrwgFmle").val());
+				$("#expectMtrtyFrwg").val($("#expectMtrtyFrwgFmle").val());
+			}else{
+				$("#nowFrwg").val($("#expectMtrtyFrwgMl").val());
+				$("#goalFrwg").val($("#expectMtrtyFrwgMl").val());
+				$("#expectMtrtyFrwg").val($("#expectMtrtyFrwgMl").val());
+			}
+		}else if(species2=="성묘"){
+			$("#nowFrwg").val($("#expectMtrtyFrwgFmle").val());
+			$("#goalFrwg").val($("#expectMtrtyFrwgFmle").val());
+			$("#expectMtrtyFrwg").val($("#expectMtrtyFrwgFmle").val());
+		}
+	}
+
+	if(animalSeCode=="400001"){
+		if(species2=="자견"){
+			if(species3=="암컷") growthSexdstnSe = "413001";
+			else if(species3=="수컷") growthSexdstnSe = "413002";
+		}else if(species2=="성견"){
+			if(species3=="암컷") growthSexdstnSe = "413003";
+			else if(species3=="수컷") growthSexdstnSe = "413004";
+		}
+	}else if(animalSeCode=="400002"){
+		if(species2=="자묘"){
+			if(species3=="암컷") growthSexdstnSe = "413005";
+			else if(species3=="수컷") growthSexdstnSe = "413006";
+		}else if(species2=="성묘"){
+			if(species3=="암컷") growthSexdstnSe = "413007";
+			else if(species3=="수컷") growthSexdstnSe = "413008";
+		}
+	}
+
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+
+	// $.ajax({
+	// 	url : "/portal/ps/psx/psxf/growthActStepLst.ps",
+    // 	type : "POST",
+    // 	data : {
+	// 				animalSeCode : animalSeCode,
+	// 				growthSexdstnSe : growthSexdstnSe
+	// 			},
+    // 	dataType : "json",
+    // 	success : function (data) {
+    // 		// 성장ㆍ활동단계
+    // 		if(data.growthActStepLst.length > 0){
+    // 			var tmpHtml = "";
+	// 			//성견의 그레이트 데인, 뉴펀틀랜드, 테리어의 경우는 예외 케이스로 값을 고정으로 셋팅(에너지량 :4000, bw:0.75)
+    // 			if(species2=="성견"){
+    //     			if(species=="그레이트 데인"){
+    //     				tmpHtml += "<li><a href='#2' onclick=\"javascript:fncGrowthActStep(this, '401002^^200^^4000^^0.75');\">활동적인 그레이트 데인(200)</a></li>";
+    //     			}else if(species=="뉴펀들랜드"){
+    //     				tmpHtml += "<li><a href='#2' onclick=\"javascript:fncGrowthActStep(this, '401002^^105^^4000^^0.75');\">뉴펀들랜드(105)</a></li>";
+    //     			}else if(species.indexOf("테리어") > -1){
+    //     				tmpHtml += "<li><a href='#2' onclick=\"javascript:fncGrowthActStep(this, '401002^^180^^4000^^0.75');\">활동적인 테리어(180)</a></li>";
+    //     			}
+    // 			}
+
+	// 			$.each(data.growthActStepLst, function(idx, val){
+	// 				tmpHtml += "<li><a href='#2' onclick=\"javascript:fncGrowthActStep(this, '" + val.animalTy + "^^" + val.growthActStepQy+ "^^" + val.feedEnergy+ "^^" + val.bw + "');\">" + val.growthActStepNm + "(" + val.growthActStepQy + ")</a></li>";
+	// 			});
+
+	// 			$("#growthActStepHtml").html(tmpHtml);
+	// 			$("#growthActStepHtml > li > a").eq(0).trigger("click");
+    // 		}
+    // 	}
+	// });
+
+	// { pse0=0; 견/묘  pse2=0; 자/성  pse3=0; 암/수 }
+	if(animalSeCode=="400001"){
+		pse0 = 0;
+		if(species2=="자견"){
+			pse2 = 0;
+			if(species3=="암컷") 		pse3=0;
+			else if(species3=="수컷") 	pse3=1;
+		}else if(species2=="성견"){
+			pse2 = 1;
+			if(species3=="암컷") 		pse3=0;
+			else if(species3=="수컷") 	pse3=1;
+		}
+	}else if(animalSeCode=="400002"){
+		pse0 = 1;
+		if(species2=="자묘"){
+			pse2 = 0;
+			if(species3=="암컷") 		pse3=0;
+			else if(species3=="수컷") 	pse3=1;
+		}else if(species2=="성묘"){
+			pse2 = 1;
+			if(species3=="암컷") 		pse3=0;
+			else if(species3=="수컷") 	pse3=1;
+		}
+	}
+
+    var species =  document.getElementById("speciesHtml").options[document.getElementById("speciesHtml").selectedIndex].value;
+	$.each(pet_species[pse0], function(idx, val){
+		if(val[2] == species) pse1 = idx; // species
+	});
+
+	var data = {
+		animalSeCode : animalSeCode,
+		growthSexdstnSe : growthSexdstnSe
+	};
+	
+	if(pet_growth[pse0][pse1][pse2][pse3].length > 0){
+		var tmpHtml = "";
+		//성견의 그레이트 데인, 뉴펀틀랜드, 테리어의 경우는 예외 케이스로 값을 고정으로 셋팅(에너지량 :4000, bw:0.75)
+		if(species2=="성견"){
+			if(species=="그레이트 데인"){
+				tmpHtml += "<option onclick=\"javascript:fncGrowthActStep(this, '401002^^200^^4000^^0.75');\">활동적인 그레이트 데인(200)</option>";
+			}else if(species=="뉴펀들랜드"){
+				tmpHtml += "<option onclick=\"javascript:fncGrowthActStep(this, '401002^^105^^4000^^0.75');\">뉴펀들랜드(105)</option>";
+			}else if(species.indexOf("테리어") > -1){
+				tmpHtml += "<option onclick=\"javascript:fncGrowthActStep(this, '401002^^180^^4000^^0.75');\">활동적인 테리어(180)</option>";
+			}
+		}
+
+		$.each(pet_growth[pse0][pse1][pse2][pse3], function(idx, val){
+			// var params1 = val[0].split('^^');			// 401002, 200, 4000, 0.75
+			// var params2 = val[1].split('(').split(')');	// 활동적인 그레이트 데인, 200
+			tmpHtml += "<option onclick=\"javascript:fncGrowthActStep(this, '" + val[0] + "');\" value='" + val[1] + "'>" + val[1] + "</option>";
+		});
+
+		$("#growthActStepHtml").html(tmpHtml);
+	}
+}
+
+// 목표 체중, 강아지수 & 새끼고양이수, 비유기(주차), 예상 성숙 체중(kg), 활동정도 초기화
+function fncInputClear(){
+	// 목표 체중
+	$(".goalFrwgView").show();
+
+	// 강아지수 & 새끼고양이수
+	$("#emergAnimal").val("1");
+	$(".emergAnimalView").hide();
+	$(".emergAnimalView").addClass("exclExceptArea");
+
+	// 비유기(주차)
+	$("#stageOfLactation").val("1");
+	$(".stageOfLactationView").hide();
+	$(".stageOfLactationView").addClass("exclExceptArea");
+
+	// 예상 성숙 체중(kg)
+	$(".expectMtrtyFrwgView").hide();
+	$(".expectMtrtyFrwgView").addClass("exclExceptArea");
+
+	// 활동정도
+	$("#actDgree").val("");
+	$(".actDgreeView").hide();
+	$(".actDgreeView").addClass("exclExceptArea");
+}
+
+// 영양소 정보 초기화
+function fncNutrientClear(){
+	$("#nutrientTable").find("input[type=text]").val("");
+	$("input[name=nutrient1]").eq(0).val('40');
+	$(".resultBox").removeClass("sucess");
+	$(".resultBox").removeClass("warning");
+	$(".resultBox").html('배합상태');
+}
+
+//영양소정보 펼쳐보기 & 간편보기
+function fncNutrientView(){
+	var nutrientView = $("#nutrientView").find("span");
+
+	if(nutrientView.html()=="펼쳐보기"){
+		nutrientView.html("간편보기");
+		$("[id='nutrient'").fadeIn("slow");
+	}else{
+		nutrientView.html("펼쳐보기");
+		$("[id='nutrient'").hide();
+	}
+}
+
+//입력값 확인
+function fncValidation(){
+	var animalTyNm = $("#growthActStepHtml > option").find("a.active").text();
+	animalTyNm = animalTyNm.substring(0, animalTyNm.indexOf("("));
+
+	//수분값 확인
+	//if($("input[name=nutrient1]").eq(0).val() == '' || !($("input[name=nutrient1]").eq(0).val()>=10 && $("input[name=nutrient1]").eq(0).val()<=70)){
+	if($("input[name=nutrient1]").eq(0).val() == ''){
+		alert("수분함량(%)값을 설정하세요.");
+		//alert("수분함량(%)은 10~70 사이로 설정하세요.");
+		$("input[name=nutrient1]").eq(0).focus();
+		return false;
+	}
+
+	// 현재 체중(kg)
+	if($("#nowFrwg").val()=="" || !($("#nowFrwg").val()>=1 && $("#nowFrwg").val()<=100)){
+		alert("현재 체중은  1~100kg 사이로 설정하세요.");
+		$("#nowFrwg").val("").focus();
+		return false;
+	}
+	// 목표 체중(kg)
+	if((animalTyNm=="성견" || animalTyNm=="성묘") && ($("#goalFrwg").val()=="" || $("#goalFrwg").val()<$("#nowFrwg").val() || $("#goalFrwg").val() > Number($("#nowFrwg").val()) + (Number($("#nowFrwg").val()) / 100 * 10))){
+		alert("목표 체중은  현재 체중보다 작거나 10%를 초과할수 없습니다.");
+		$("#goalFrwg").val("").focus();
+		return false;
+	}
+	// 사료 에너지
+	if($("#feedEnergy").val()=="" || $("#feedEnergy").val()<4000){
+		alert("사료 에너지는 최소 4000으로 설정하세요.");
+		$("#feedEnergy").val("").focus();
+		return false;
+	}
+	// 신생동물(마리)
+	if((animalTyNm=="비유기 암캐" || animalTyNm=="비유기 암코양이") && ($("#emergAnimal").val()=="" || !($("#emergAnimal").val()>=1 && $("#emergAnimal").val()<=8))){
+		alert($(".emergAnimalView").eq(0).html() + "는 1~8 사이로 설정하세요.");
+		$("#emergAnimal").val("").focus();
+		return false;
+	}
+	// 임신기(주차)
+	if(animalTyNm=="임신기 암캐" && ($("#stageOfLactation").val()=="" || !($("#stageOfLactation").val()>=1 && $("#stageOfLactation").val()<=8))){
+		alert("임신기(주차)는 1~8 사이로 설정하세요.");
+		$("#stageOfLactation").val("").focus();
+		return false;
+	}
+	// 비유기(주차)
+	if(animalTyNm=="비유기 암캐" && ($("#stageOfLactation").val()=="" || !($("#stageOfLactation").val()>=1 && $("#stageOfLactation").val()<=4))){
+		alert("비유기(주차)는 1~4 사이로 설정하세요.");
+		$("#stageOfLactation").val("").focus();
+		return false;
+	}
+	// 비유기(주차)
+	if(animalTyNm=="비유기 암코양이" && ($("#stageOfLactation").val()=="" || !($("#stageOfLactation").val()>=1 && $("#stageOfLactation").val()<=7))){
+		alert("비유기(주차)는 1~7 사이로 설정하세요.");
+		$("#stageOfLactation").val("").focus();
+		return false;
+	}
+	// 예상 성숙 체중(kg)
+	if((animalTyNm=="자견" || animalTyNm=="자묘") && ($("#expectMtrtyFrwg").val()=="" || !($("#expectMtrtyFrwg").val()>=1 && $("#expectMtrtyFrwg").val()<=100))){
+		alert("예상 성숙 체중(kg)는 1~100 사이로 설정하세요.");
+		$("#expectMtrtyFrwg").val("").focus();
+		return false;
+	}
+	// 활동정도
+	if(animalTyNm=="힘든 활동하는 사역견" && ($("#actDgree").val()=="" || !($("#actDgree").val()>=280 && $("#actDgree").val()<=560))){
+		alert("활동정도는 280~560 사이로 설정하세요.");
+		$("#actDgree").val("").focus();
+		return false;
+	}
+	// 수분함량(%) 하한
+	//if($("#mitrContLwlyr").val()=="" || !($("#mitrContLwlyr").val()>=10 && $("#mitrContLwlyr").val()<=70)){
+	if($("#mitrContLwlyr").val()==""){
+		alert("수분함량(%)값을 설정하세요.");
+		$("#mitrContLwlyr").val("").focus();
+		return false;
+	}
+	// 수분함량(%) 상한
+	/*
+	if($("#mitrContUplmt").val()=="" || !($("#mitrContUplmt").val()>=10 && $("#mitrContUplmt").val()<=80)){
+		alert("수분함량(%) 상한은 10~80 사이로 설정하세요.");
+		$("#mitrContUplmt").val("").focus();
+		return false;
+	}
+	*/
+	// 배합기 용량
+	if($("#mxnCpcty").val()=="" || !($("#mxnCpcty").val()>=0)){
+		alert("배합기 용량을 입력하세요.");
+		$("#mxnCpcty").val("").focus();
+		return false;
+	}
+	// 원료 선택
+	if($("#mxnCtCalcTable > tbody").find("tr").length==1){
+		alert("원료를 선택하세요.");
+		return false;
+	}
+	// 영양소정보
+	if($("input[name='nutrientChk']:checked").length==0){
+		alert("영양소정보의 항목을 1개 이상 체크하세요.");
+		return false;
+	}
+
+	//byProteinDmSet
+	if($("#byProteinDmSet").val()=="" || !($("#byProteinDmSet").val()>0)){
+		alert("ProteinDm 셋팅값을 입력하세요.");
+		$("#byProteinDmSet").val("").focus();
+		return false;
+	}
+	//byFatDmSet
+	if($("#byFatDmSet").val()=="" || !($("#byFatDmSet").val()>0)){
+		alert("FatDm 셋팅값을 입력하세요.");
+		$("#byFatDmSet").val("").focus();
+		return false;
+	}
+	//byNfeDmSet
+	if($("#byNfeDmSet").val()=="" || !($("#byNfeDmSet").val()>0)){
+		alert("NfeDm 셋팅값을 입력하세요.");
+		$("#byNfeDmSet").val("").focus();
+		return false;
+	}
+
+	return true;
+}
+
+//원료선택
+function fncRawMaterialChoice(){
+	var width = $("#tblList").scrollLeft();
+	var top = $("#tblList2").scrollTop();
+
+	var args = {
+		"upperFeedClCode" : $("#upperFeedClCode").val(),
+		"feedNm" : $("#feedNm").val(),
+		"sortField" : $("#sortField").val(),
+		"sortOrder" : $("#sortOrder").val(),
+		feedSeqNoArr : feedSeqNoArr
+	};
+	$("#divPop .con-bx").load("/portal/ps/psx/psxf/rawMaterialChoice.ps #resultArea", args, function(response, status, xhr){
+		if(status == "error"){
+			alert("요청사항 처리 중 오류가 발생했습니다. 시스템 관리자에게 문의하세요.");
+		}else{
+			$.each(feedSeqNoArr, function(idx, val){
+				var rawMaterial = $("input[name='rawMaterialArr'][value=" + val + "]");
+
+				rawMaterial.prop("checked", true);
+				rawMaterial.parent().css("background", "#f1f1f1");
+				rawMaterial.parent().nextAll().css("background", "#f1f1f1");
+			});
+
+			// 원료 선택
+			$("input[name='rawMaterialArr']").unbind("click");
+
+			// 원료 선택
+			$("input[name='rawMaterialArr']").click(function(e){
+				if($(this).is(":checked")) $(this).prop("checked", false);
+				else $(this).prop("checked", true);
+
+				fncRawMaterialCheck($(this).val());
+			});
+
+			// 원료 삭제
+			$("button[name=feedMixDel]").unbind("click");
+
+			$("button[name=feedMixDel]").click(function(e){
+				var feedSeqNo = $(this).parent().attr("id").replace("feedMixSelect", "");
+
+				if($("input[name='rawMaterialArr'][value=" + feedSeqNo + "]").length > 0){
+					fncRawMaterialCheck(feedSeqNo);
+				}else{
+					var cheStr = fncBassMaterialIs(feedSeqNo);
+
+					if(cheStr != ""){
+						if(!confirm(cheStr+"은 기본 선택을 추천합니다! 삭제하시겠습니까?")){
+							e.preventDefault();
+							return false;
+						}
+					}
+
+					feedSeqNoArr = jQuery.grep(feedSeqNoArr, function(value){
+						return value != feedSeqNo;
+					});
+
+					$(this).parent().remove();
+				}
+			});
+			
+			cfSetEvent(fncRawMaterialSearch, ['searchText']);  //모든 inputbox에 적용
+			$("#tblList").scrollLeft(width);
+			$("#tblList2").scrollTop(top);
+		}
+		
+		$("#input_ctg01").change(function(){
+			var upperCode = $("#input_ctg01").val();
+
+			$("#input_ctg02").empty();
+			$("#input_ctg02").append("<option value=''>선택</option>");
+
+			if(upperCode!=""){
+				$.ajax({
+					url        : "/portal/cmmLowerCodeLst.do",
+			    	type       : "POST",
+			    	data	   : {codeGroup : 402, upperCode: upperCode, orderCode : 'ordr'},
+			    	dataType   : "json",
+					contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+			    	success    : function (data) {
+						if(data.length>1){
+							for(i=1; i<data.length; i++){
+								$("#input_ctg02").append("<option value='"+data[i].code+"'>" + data[i].codeNm + "</option>")
+							}
+						}
+			    	}
+				});
+			}
+		});
+
+		// Input 목록
+		var numberInputId = [
+			"inputFeedNm", "inputMtralPc", "inputMitrQy", "inputProtQy",
+			"inputTrypQy", "inputClciQy", "inputPhphQy", "inputFatQy",
+			"inputLnacQy", "inputLiacQy", "inputAshsQy", "inputVtmaQy",
+			"inputCrbQy", "inputCrfbQy", "inputTotEdblfibrQy", "inputInslbltyEdblfibrQy",
+			"inputSlwtEdblfibrQy", "inputNaQy", "inputPtssQy", "inputMgmQy", "inputMummMtralLmtt", "inputMxmmMtralLmtt"
+		];
+
+		// 숫자만 입력 가능, Validation 체크
+		$(numberInputId).each(function(index, value){
+			var input = "input[name=" + value + "]";
+
+			$(input).keydown(function(e){
+				if(e.keyCode == 9 && value=="inputMxmmMtralLmtt"){ // tab key
+					e.preventDefault();
+				}
+			});
+
+			$(input).keyup(function(e){
+				if(e.keyCode == 16 || e.keyCode == 36){ // shift 이거나 home key
+					return false;
+				}else if (e.keyCode == 13){ // enter key
+					$("#feedMxnAddForm").find("input:text").eq(index+1).focus();
+				}else{
+					if(value!="inputFeedNm") $(input).val($(input).val().replace(/[^\.0-9]/g, ''));
+				}
+			});
+		});
+		
+		var btnHtml = "";
+		btnHtml += "<div class=\"tc mb20\">";
+		btnHtml += "<a href=\"#1\" class=\"btn-2-w\" onclick='javascript:fncRawMaterialDel();'><span>초기화</span></a>";
+		btnHtml += "<a href=\"#1\" class=\"btn-2-w\" onclick='javascript:fncRawMaterialChoiceValue();'><span>적용</span></a>";
+		btnHtml += "<a href=\"#1\" class=\"btn-2-w\" onclick=' $( \"#divPop\" ).dialog( \"close\" );'><span>닫기</span></a>";
+		btnHtml += "</div>";
+		$("#divPop .con-bx").append(btnHtml);
+	});
+
+	var winWidth = $(window).width();
+
+	if(winWidth < 1400) $("#divPop").dialog("option", "width", 900);
+	else $("#divPop").dialog("option", "width", 1200);
+
+	$("#divPop").dialog("open");
+}
+
+//기본원료여부확인
+function fncBassMaterialIs(value){
+	var retFlag = "";
+	$.each(feedSeqNoDefArr, function(idx, val){
+		if(feedSeqNoDefArr[idx] == value){
+			retFlag = feedSeqNoDefArrNm[idx]
+		}
+	});
+	return retFlag;
+}
+
+//원료체크
+function fncRawMaterialCheck(val){
+	var rawMaterial = $("input[name='rawMaterialArr'][value=" + val + "]");
+	var cheStr = fncBassMaterialIs(val);
+	if(cheStr != "" && rawMaterial.is(":checked")){
+		if(!confirm(cheStr+"은 기본 선택을 추천합니다! 삭제하시겠습니까?")){
+			event.preventDefault();
+			return false;
+		}
+	}
+
+	if(rawMaterial.is(":checked")){
+		rawMaterial.prop("checked", false);
+		rawMaterial.parent().css("background", "none");
+		rawMaterial.parent().nextAll().css("background", "none");
+
+		// 선택 원료 삭제
+		feedSeqNoArr = jQuery.grep(feedSeqNoArr, function(value){
+			return value != val;
+		});
+		$("#feedMixSelect").find("span[id='feedMixSelect" + val + "']").remove();
+	}else{
+		rawMaterial.prop("checked", true);
+		rawMaterial.parent().css("background", "#f1f1f1");
+		rawMaterial.parent().nextAll().css("background", "#f1f1f1");
+
+		// 선택 원료 추가
+		feedSeqNoArr.push(String(val));
+		$("#feedMixSelect").append("<span id='feedMixSelect" + val + "'><strong>" + rawMaterial.parent().next().html() + "</strong>" + rawMaterial.parent().next().next().find("span").html() + "<button type='button' name='feedMixDel'></button></span>");
+
+		// 원료 선택
+		$("input[name='rawMaterialArr']").unbind("click");
+
+		// 원료 선택
+		$("input[name='rawMaterialArr']").click(function(e){
+			if($(this).is(":checked")) $(this).prop("checked", false);
+			else $(this).prop("checked", true);
+
+			fncRawMaterialCheck($(this).val());
+		});
+
+		// 원료 삭제
+		$("button[name=feedMixDel]").unbind("click");
+
+		$("button[name=feedMixDel]").click(function(e){
+			var feedSeqNo = $(this).parent().attr("id").replace("feedMixSelect", "");
+
+			if($("input[name='rawMaterialArr'][value=" + feedSeqNo + "]").length > 0){
+				fncRawMaterialCheck(feedSeqNo);
+			}else{
+				var cheStr = fncBassMaterialIs(feedSeqNo);
+				if(cheStr != ""){
+					if(!confirm(cheStr+"은 기본 선택을 추천합니다! 삭제하시겠습니까?")){
+						e.preventDefault();
+						return false;
+					}
+				}
+
+				feedSeqNoArr = jQuery.grep(feedSeqNoArr, function(value){
+					return value != feedSeqNo;
+				});
+
+				$(this).parent().remove();
+			}
+		});
+	}
+}
+
+//원료선택 값 불러오기
+function fncRawMaterialChoiceValue(){
+	var rawMaterialArr = $("input[name='rawMaterialArr']");
+
+	rawMaterialArr.each(function(){
+		var feedSeqNo = $(this).val();
+
+		feedSeqNoArr = jQuery.grep(feedSeqNoArr, function(value){
+			return value != feedSeqNo;
+		});
+
+		if($(this).is(":checked")){
+			feedSeqNoArr.push(feedSeqNo);
+		}
+	});
+
+	$( "#divPop" ).dialog( "close" );
+
+	$(".resultBox").removeClass("sucess");
+	$(".resultBox").removeClass("warning");
+	$(".resultBox").html("배합상태");
+
+// 	var feedStayNoArr = new Array();
+// 	$("#mxnCtCalcTable > tbody").find("tr").each(function(idx){
+// 		if(idx>0){
+// 			var feedStayNo = $(this).find("td").eq(0).find("button").val();
+// 			var flag = true;
+// 			for(var i=0; i<feedSeqNoArr.length;i++){
+// 				if(feedSeqNoArr[i] == feedStayNo){
+// 					flag = false;
+// 				}
+// 			}
+// 			if(flag){
+// 				$(this).remove();
+// 			}else{
+// 				feedStayNoArr.push(feedStayNo);//삭제안할 원료들
+// 			}
+// 		}
+// 		//if(idx>0) $(this).remove();
+// 	});
+// 	var feedStayNoArrSub = new Array();//다시 담을 원료들
+// 	for(var j=0; j< feedSeqNoArr.length;j++){//전체 원료들
+// 		var feeFlag = true;
+// 		for(var k=0; k<feedStayNoArr.length;k++){//삭제안한원료
+// 			if(feedSeqNoArr[j] == feedStayNoArr[k]){
+// 				feeFlag = false;
+// 			}
+// 		}
+// 		if(feeFlag){
+// 			feedStayNoArrSub.push(feedSeqNoArr[j]);
+// 		}
+// 	}
+	$("#mxnCtCalcTable > tbody").find("tr").each(function(idx){
+		if(idx>0) $(this).remove();
+	});
+
+	if(feedSeqNoArr.length>1){
+		//$("button[name=feedMixDelete]").unbind('click');
+		$.ajax({
+			url : "/portal/ps/psx/psxf/rawMaterialLst.ps",
+	    	type : "POST",
+	    	data : {feedSeqNoArr : feedSeqNoArr},
+	    	dataType : "json",
+	    	success : function (data) {
+	    		$.each(data.rawMaterialLst, function(idx, val){
+					var html = "";
+					var min = "";
+					var max = 100;
+
+					html += "<tr>";
+					html += "<td class='txt-l'>";
+					html += val.feedClCodeNm + " > " + val.feedNm + "<button type='button' name='feedMixDelete' class='feedMixDelete exclExceptArea' value='" + val.feedSeqNo + "'></button>";
+					html += "<input class='exclExceptArea' type='hidden' name='rawMaterialDryMatter' value='" + val.dryMatter + "' />";
+					html += "<input class='exclExceptArea' type='hidden' name='rawMaterialProt' value='" + (val.protQy==null? 0: val.protQy) + "' />";
+					html += "<input class='exclExceptArea' type='hidden' name='rawMaterialTryp' value='" + (val.trypQy==null? 0: val.trypQy) + "' />";
+					html += "<input class='exclExceptArea' type='hidden' name='rawMaterialClci' value='" + (val.clciQy==null? 0: val.clciQy) + "' />";
+					html += "<input class='exclExceptArea' type='hidden' name='rawMaterialPhph' value='" + (val.phphQy==null? 0: val.phphQy) + "' />";
+					html += "<input class='exclExceptArea' type='hidden' name='rawMaterialFat' value='" + (val.fatQy==null? 0: val.fatQy) + "' />";
+					html += "<input class='exclExceptArea' type='hidden' name='rawMaterialLnac' value='" + (val.lnacQy==null? 0: val.lnacQy) + "' />";
+					html += "<input class='exclExceptArea' type='hidden' name='rawMaterialLiac' value='" + (val.liacQy==null? 0: val.liacQy) + "' />";
+					html += "<input class='exclExceptArea' type='hidden' name='rawMaterialAshs' value='" + (val.ashsQy==null? 0: val.ashsQy) + "' />";
+					html += "<input class='exclExceptArea' type='hidden' name='rawMaterialVtma' value='" + (val.vtmaQy==null? 0: val.vtmaQy) + "' />";
+					html += "<input class='exclExceptArea' type='hidden' name='rawMaterialNa' value='" + (val.naQy==null? 0: val.naQy) + "' />";
+					html += "<input class='exclExceptArea' type='hidden' name='rawMaterialPtss' value='" + (val.ptssQy==null? 0: val.ptssQy) + "' />";
+					html += "<input class='exclExceptArea' type='hidden' name='rawMaterialMgm' value='" + (val.mgmQy==null? 0: val.mgmQy) + "' />";
+					html += "<input class='exclExceptArea' type='hidden' name='rawMaterialCrb' value='" + (val.crbQy==null? 0: val.crbQy) + "' />";
+					html += "<input class='exclExceptArea' type='hidden' name='rawMaterialCrfb' value='" + (val.crfbQy==null? 0: val.crfbQy) + "' />";
+					html += "<input class='exclExceptArea' type='hidden' name='rawMaterialTotEdblfibr' value='" + (val.totEdblfibrQy==null? 0: val.totEdblfibrQy) + "' />";
+					html += "<input class='exclExceptArea' type='hidden' name='rawMaterialInslbltyEdblfibr' value='" + (val.inslbltyEdblfibrQy==null? 0: val.inslbltyEdblfibrQy) + "' />";
+					html += "<input class='exclExceptArea' type='hidden' name='rawMaterialSlwtEdblfibr' value='" + (val.slwtEdblfibrQy==null? 0: val.slwtEdblfibrQy) + "' />";
+					html += "</td>";
+					html += "<td class='txt-c'><input class='chgInp' type='text' name='rawMaterialPc' value='" + cfSetMoneyComma(val.mtralPc) + "' style='width: 60px !important; text-align:center;' /></td>";
+					html += "<td class='txt-c'><input class='chgInp' type='text' name='rawMaterialMitr' value='" + (val.mitrQy==null? 0: val.mitrQy) + "' style='width: 40px !important; text-align:center;' /></td>";
+					html += "<td class='txt-c'><input class='chgInp' type='text' name='rawMaterialPer' value='' style='width: 50px !important; text-align:center; background:#f1f1f1;' readonly='readonly' /></td>";
+					html += "<td class='txt-c'><input class='chgInp' type='text' name='rawMaterialPerOne' value='' style='width: 50px !important; text-align:center; background:#f1f1f1;' readonly='readonly' /></td>";
+					html += "<td class='txt-c'><input class='chgInp' type='text' name='rawMaterialRate' value='' style='width: 40px !important; text-align:center; background:#f1f1f1;' readonly='readonly' /></td>";
+
+					//if(val.feedNm == "난각분말") min = 0.5;
+					//else if(val.feedNm == "반려동물 집밥 영양제") min = 0.5;
+
+					html += "<td class='txt-c'><input class='chgInp' type='text' name='rawMaterialUseMin' value='" + (val.mummMtralLmtt==null? "": val.mummMtralLmtt)  + "' style='width: 30px !important; text-align:center;' /></td>";
+
+					//if(val.feedNm == "비타민-미네랄 프리믹스") max = 0.4;
+					//else if(val.feedNm == "콜린" || val.feedNm == "트립토판") max = 0.1;
+					//else if(val.feedNm == "난각분말") max = 1.0;
+					//else if(val.feedNm == "물") max = 40;
+					//else if(val.feedNm == "반려동물 집밥 영양제") max = 1.0;
+
+					html += "<td class='txt-c'><input class='chgInp' type='text' name='rawMaterialUseMax' value='" + (val.mxmmMtralLmtt==null? "": val.mxmmMtralLmtt) + "' style='width: 30px !important; text-align:center;' /></td>";
+					html += "<td class='txt-c'><input class='chgInp' type='text' name='orginlPc' value='' style='width: 40px !important; text-align:center; background:#f1f1f1;' readonly='readonly' /></td>";
+					html += "<td class='txt-c'><input class='chgInp' type='text' name='airDryMatter' value='' style='width: 40px !important; text-align:center; background:#ffffff; border-color:#ffffff;' readonly='readonly' /></td>";
+					html += "</tr>";
+
+					$("#mxnCtCalcTable").append(html);
+	    		});
+
+				// 배합비 원료 삭제
+				$("button[name=feedMixDelete]").click(function(e){
+					var feedSeqNo = $(this).val();
+
+					var cheStr = fncBassMaterialIs(feedSeqNo);
+					if(cheStr != ""){
+						if(!confirm(cheStr+"은 기본 선택을 추천합니다! 삭제하시겠습니까?")){
+							e.preventDefault();
+							return false;
+						}
+					}
+
+					var rawMaterialRate = Number($(this).parent().parent().find("input[name=rawMaterialRate]").val()==""? "0": $(this).parent().parent().find("input[name=rawMaterialRate]").val());
+
+					feedSeqNoArr = jQuery.grep(feedSeqNoArr, function(value){
+						return value != feedSeqNo;
+					});
+
+					$(this).parent().parent().remove();
+
+					if(rawMaterialRate>0){
+						if(confirm("배합비 재계산을 하시겠습니까?")){
+							fncMxnCtCalc();
+						}
+					}
+				});
+
+	    		// Input 목록
+	    		var rawMaterialInputId = [
+					"rawMaterialPc", "rawMaterialMitr", "rawMaterialUseMin", "rawMaterialUseMax"
+				];
+
+	    		// 숫자만 입력 가능, Validation 체크
+	    		$(rawMaterialInputId).each(function(index, value){
+	    			var input = "input[name=" + value + "]";
+
+	    			$(input).keypress(function(e){
+	    				if(!fncValidation()){
+	    					e.preventDefault();
+	    				}
+	    			});
+
+	    			$(input).keydown(function(e){
+	    				if(e.keyCode == 9){ // tab key
+	    					e.preventDefault();
+	    				}
+	    			});
+
+	    			$(input).keyup(function(e){
+	    				var inputIdx = $(input).index(this);
+
+	    				if(e.keyCode == 16 || e.keyCode == 36){ // shift 이거나 home key
+	    					return false;
+	    				}else if (e.keyCode == 13){ // enter key
+	    					var idx = $(input).parent().index();
+	    					$(input).eq(inputIdx).parent().parent().next().find("td").eq(idx).find("input").select();
+	    				}else{
+	    					$(input).eq(inputIdx).val($(input).eq(inputIdx).val().replace(/[^\.0-9]/g, ''));
+	    				}
+	    			});
+	    		});
+	    	}
+		});
+	}else{
+		$("#rawMaterialPerSum").val(0);
+		$("#rawMaterialPerOneSum").val(0);
+		$("#rawMaterialRateSum").val(0);
+		$("#orginlPcSum").val(0);
+		$("#airDryMatterSum").val(0);
+	}
+}
+
+//배합비계산
+function fncMxnCtCalc(){
+	if(fncValidation()){
+		//2018.05.28 기능개선 수분함량 체크박스 되어있을경우 수분함량값 히든의 수분값에 넣기
+   		//if($("input[name='nutrientChk'][value='nutrient1']").is(":checked")){
+			$("input[name=mitrContLwlyr]").val($("input[name=nutrient1]").eq(0).val());// 영양소요구량
+		//}
+
+		var animalSeCodeText = $("button[name=animalSeCode].active").text();																				// 동물
+		// var spciesNm = $("#speciesHtml").find("a.active").text();
+        var spciesNm = $("#speciesHtml").options[$("#speciesHtml").selectedIndex].text;
+		var growthStepmNm = $("#species2Html").find("a.active").text();
+		var sexdstnNm = $("#species3Html").find("a.active").text();
+		var animalTyNm = $("#growthActStepHtml > option").find("a.active").text();																					// 성장ㆍ활동단계
+		animalTyNm = animalTyNm.substring(0, animalTyNm.indexOf("("));
+		var nowFrwg = $("#nowFrwg").val(); 																																// 현재 체중(kg)
+		var goalFrwg = $("#goalFrwg").val(); 																																// 목표 체중(kg)
+		var feedEnergy = $("#feedEnergy").val(); 																														// 사료 에너지
+		var emergAnimal = $("#emergAnimal").val(); 																														// 신생동물(마리)
+		var expectMtrtyFrwg = $("#expectMtrtyFrwg").val();																											// 예상 성숙 체중(kg)
+		var stageOfLactation = $("#stageOfLactation").val();																											// 임신기 & 비유기(주차)
+		var actDgree = $("#actDgree").val();																																// 활동정도
+		var mitrContLwlyr = $("#mitrContLwlyr").val(); 																													// 수분함량(%) 하한
+		//var mitrContUplmt = $("#mitrContUplmt").val(); 																												// 수분함량(%) 상한
+		var mxnCpcty = $("#mxnCpcty").val();																															// 배합량
+		var orginlPcSum = 0;																																					// 금액(원/kg) - 원물 합
+		var rawMaterialWaterSum = 0;																																		// 수분 합
+		var rawMaterialOriginalSum = 0;																																		// 원물 합
+		var rawMaterialDryMatterSum = 0;																																	// 건물 합
+		var rawMaterialProtSum = 0;																																			// 단백질 합
+		var rawMaterialTrypSum = 0;																																			// 트립토판 합
+		var rawMaterialClciSum = 0;																																			// 칼슘 합
+		var rawMaterialPhphSum = 0;																																			// 인 합
+		var rawMaterialFatSum = 0;																																			// 지방 합
+		var rawMaterialLnacSum = 0;																																			// 리놀레산 합
+		var rawMaterialLiacSum = 0;																																			// 리놀렌산 합
+		var rawMaterialVtmaSum = 0;																																		// 비타민A 합
+		var rawMaterialNaSum = 0;																																			// 나트륨 합
+		var rawMaterialPtssSum = 0;	// 칼륨 합
+		var rawMaterialMgmSum = 0;	// 마그네슘 합
+		var rawMaterialTotEdblfibrSum = 0;																																	// 총이식섬유 합
+		var rawMaterialInslbltyEdblfibrSum = 0;																															// 불용성식이섬유 합
+		var rawMaterialSlwtEdblfibrSum = 0;																																// 수용성식이섬유 합
+		var nutrient1 = $("input[name=nutrient1]");																														// 수분함량(%)
+		var nutrient2 = $("input[name=nutrient2]");																														// 사료급여량(g)
+		var nutrient3 = $("input[name=nutrient3]");																														// 건물섭취량(g)
+		var nutrient4 = $("input[name=nutrient4]");																														// 축수산물비율(%), 건물
+		var nutrient5 = $("input[name=nutrient5]");																														// 단백질(g), 건물
+		var nutrient6 = $("input[name=nutrient6]");																														// 트립토판(g), 건물
+		var nutrient7 = $("input[name=nutrient7]");																														// 칼슘(g), 건물
+		var nutrient8 = $("input[name=nutrient8]");																														// 인(g), 건물
+		var nutrient9 = $("input[name=nutrient9]");																														// 칼슘/인
+		var nutrient10 = $("input[name=nutrient10]");																													// 지방(g), 건물
+		var nutrient11 = $("input[name=nutrient11]");																													// 리놀레산(g), 건물
+		var nutrient12 = $("input[name=nutrient12]");																													// 리놀렌산(g), 건물
+		var nutrient13 = $("input[name=nutrient13]");																													// 비타민 A(RE), 건물
+		var nutrient14 = $("input[name=nutrient14]");																													// 나트륨(g), 건물
+		var nutrient15 = $("input[name=nutrient15]");																													// 칼륨(g), 건물
+		var nutrient16 = $("input[name=nutrient16]");																													// 총식이섬유(%), 건물
+		var nutrient17 = $("input[name=nutrient17]");																													// 불용성식이섬유(g), 건물
+		var nutrient18 = $("input[name=nutrient18]");																													// 수용성식이섬유(g), 건물
+		var nutrient19 = $("input[name=nutrient19]");																													// 마그네슘(g), 건물
+
+		// 수분함량(%)
+		//2018.05.28기능개선 수분영양소요구량이 비어있을경우에만 수분함량값을 가져와서 셋팅
+		//if($("input[name=nutrient1]").eq(0).val()=="") $("input[name=nutrient1]").eq(0).val(Number(mitrContLwlyr).toFixed(2));// 영양소요구량
+		if($("input[name=nutrient1]").eq(1).val()=="") $("input[name=nutrient1]").eq(1).val(Number($("#mitrMumm").val()));									 						// 요구량 제한(%요구량) 최소
+		if($("input[name=nutrient1]").eq(2).val()=="") $("input[name=nutrient1]").eq(2).val(Number($("#mitrMxmm").val()));															// 요구량 제한(%요구량) 최대
+		//$("input[name=nutrient1]").eq(2).val(Math.round(mitrContUplmt / mitrContLwlyr * 100));														// 요구량 제한(%요구량) 최대 : 수분함량(%) 상한 / 수분함량(%) 하한 * 100
+
+		var bw = $("#bw").val();
+		//if(animalSeCodeText=="개") bw = 0.75;
+		//else if(animalSeCodeText=="고양이") bw = 0.67;
+		//else bw = 0;
+
+		var nutrient3_1 = actDgree * Math.pow(goalFrwg, bw);																										// (성장ㆍ활동단계 기준값 * 목표 체중(kg) ^ 0.75) * 1000 / 사료 에너지
+
+		if(animalTyNm=="자견"){
+			nutrient3_1 = nutrient3_1 * (3.2 * (Math.exp(-0.87 * goalFrwg / expectMtrtyFrwg) - 0.1));
+		}else if(animalTyNm=="자묘"){
+			nutrient3_1 = nutrient3_1 * (6.7 * (Math.exp(-0.189 * goalFrwg / expectMtrtyFrwg) - 0.66));
+		}else if(animalTyNm=="임신기 암캐" && $("#stageOfLactation").val()>=5){
+			nutrient3_1 = nutrient3_1 + (26 * goalFrwg);
+		}else if(animalTyNm=="비유기 암캐" || animalTyNm=="비유기 암코양이"){
+			var l = 0;
+
+			if(animalTyNm=="비유기 암캐"){
+				var n = 0;
+				var m = 0;
+
+				if(emergAnimal >= 5){
+					n = 4;
+					m = emergAnimal - 4;
+				}else{
+					n = emergAnimal;
+				}
+
+				if(stageOfLactation == 1) l = 0.75;
+				else if(stageOfLactation == 2) l = 0.95;
+				else if(stageOfLactation == 3) l = 1.1;
+				else if(stageOfLactation == 4) l = 1.2;
+				else l = 0;
+
+				nutrient3_1 = nutrient3_1 + (nowFrwg * (24 * n + 12 * m) * l);
+			}else if(animalTyNm=="비유기 암코양이"){
+				var w = 0;
+
+				if(emergAnimal == 1 || emergAnimal == 2) w = 18;
+				else if(emergAnimal == 3 || emergAnimal == 4) w = 60;
+				else if(emergAnimal >= 5) w = 70;
+				else w = 0;
+
+				if(stageOfLactation == 1 || stageOfLactation == 2) l = 0.9;
+				else if(stageOfLactation == 3 || stageOfLactation == 4) l = 1.2;
+				else if(stageOfLactation == 5) l = 1.1;
+				else if(stageOfLactation == 6) l = 1.0;
+				else if(stageOfLactation == 7) l = 0.8;
+				else l = 0;
+
+				nutrient3_1 = nutrient3_1 + (w * goalFrwg * l);
+			}else{
+				nutrient3_1 = nutrient3_1 + 0;
+			}
+		}
+
+		nutrient3_1 = nutrient3_1 * 1000 / feedEnergy;
+
+		// 사료급여량(g)
+		$("input[name=nutrient2]").eq(0).val("-");																															// 영양소요구량 : 건물섭취량(g) 영양소요구량 * 2 이였으나 "-"로 표시
+		$("input[name=nutrient2]").eq(1).val("-");																															// 요구량 제한(%요구량) 최소 100 이였으나 "-"로 표시
+		$("input[name=nutrient2]").eq(2).val("-");																															// 요구량 제한(%요구량) 최대 125 이였으나 "-"로 표시
+
+		// 건물섭취량(g)
+		$("input[name=nutrient3]").eq(0).val("-");																															// 영양소요구량 :  (성장ㆍ활동단계 기준값 * 목표 체중(kg) ^ 0.75) * 1000 / 사료 에너지 이였으나 "-"로 표시
+		$("input[name=nutrient3]").eq(1).val("-");																															// 요구량 제한(%요구량) 최소 100 이였으나 "-"로 표시
+		$("input[name=nutrient3]").eq(2).val("-");																															// 요구량 제한(%요구량) 최대 110 이였으나 "-"로 표시
+
+		// 축수산물비율(%), 건물
+		if($("input[name=nutrient4]").eq(0).val()=="") $("input[name=nutrient4]").eq(0).val(Number(18).toFixed(2));								// 영양소요구량
+		if($("input[name=nutrient4]").eq(1).val()=="") $("input[name=nutrient4]").eq(1).val(100);															// 요구량 제한(%요구량) 최소
+		if($("input[name=nutrient4]").eq(2).val()=="") $("input[name=nutrient4]").eq(2).val(200);															// 요구량 제한(%요구량) 최대
+
+		// 단백질(g), 건물
+		$("input[name=nutrient5]").eq(0).val((($("#protQy").val() * feedEnergy / 1000) * nutrient3_1 / 1000).toFixed(2));						// 영양소요구량 : (기준값[자묘/번식, 성묘, 자견/번식, 성견] * 사료에너지 / 1000) * 건물섭취량(g) 영양소요구량 /1000
+		//if($("input[name=nutrient5]").eq(1).val()=="") $("input[name=nutrient5]").eq(1).val(100);															// 요구량 제한(%요구량) 최소
+		//if($("input[name=nutrient5]").eq(2).val()=="") $("input[name=nutrient5]").eq(2).val(500);
+		if($("input[name=nutrient5]").eq(1).val()=="") $("input[name=nutrient5]").eq(1).val(Number($("#protMumm").val()));															// 요구량 제한(%요구량) 최소
+		if($("input[name=nutrient5]").eq(2).val()=="") $("input[name=nutrient5]").eq(2).val(Number($("#protMxmm").val()));// 요구량 제한(%요구량) 최대
+
+		// 트립토판(g), 건물
+		$("input[name=nutrient6]").eq(0).val((($("#trypQy").val() * feedEnergy / 1000) * nutrient3_1 / 1000).toFixed(2));						// 영양소요구량 : (기준값[자묘/번식, 성묘, 자견/번식, 성견] * 사료에너지 / 1000) * 건물섭취량(g) 영양소요구량 /1000
+		if($("input[name=nutrient6]").eq(1).val()=="") $("input[name=nutrient6]").eq(1).val(Number($("#trypMumm").val()));															// 요구량 제한(%요구량) 최소
+		if($("input[name=nutrient6]").eq(2).val()=="") $("input[name=nutrient6]").eq(2).val(Number($("#trypMxmm").val()));															// 요구량 제한(%요구량) 최대
+
+		// 칼슘(g), 건물
+		$("input[name=nutrient7]").eq(0).val((($("#clciQy").val() * feedEnergy / 1000) * nutrient3_1 / 1000).toFixed(2));							// 영양소요구량 : (기준값[자묘/번식, 성묘, 자견/번식, 성견] * 사료에너지 / 1000) * 건물섭취량(g) 영양소요구량 /1000
+		if($("input[name=nutrient7]").eq(1).val()=="") $("input[name=nutrient7]").eq(1).val(Number($("#clciMumm").val()));															// 요구량 제한(%요구량) 최소
+		if($("input[name=nutrient7]").eq(2).val()=="") $("input[name=nutrient7]").eq(2).val(Number($("#clciMxmm").val()));															// 요구량 제한(%요구량) 최대
+
+		// 인(g), 건물
+		$("input[name=nutrient8]").eq(0).val((($("#phphQy").val() * feedEnergy / 1000) * nutrient3_1 / 1000).toFixed(2));						// 영양소요구량 : (기준값[자묘/번식, 성묘, 자견/번식, 성견] * 사료에너지 / 1000) * 건물섭취량(g) 영양소요구량 /1000
+		if($("input[name=nutrient8]").eq(1).val()=="") $("input[name=nutrient8]").eq(1).val(Number($("#phphMumm").val()));															// 요구량 제한(%요구량) 최소
+		if($("input[name=nutrient8]").eq(2).val()=="") $("input[name=nutrient8]").eq(2).val(Number($("#phphMxmm").val()));															// 요구량 제한(%요구량) 최대
+
+		// 칼슘/인
+		$("input[name=nutrient9]").eq(0).val(($("#nutrient7").eq(0).val() / $("#nutrient8").eq(0).val()).toFixed(2));									// 영양소요구량 : 칼슘(g), 건물 영양소요구량 / 인(g), 건물 영양소요구량
+		if($("input[name=nutrient9]").eq(1).val()=="") $("input[name=nutrient9]").eq(1).val(100);															// 요구량 제한(%요구량) 최소
+		if($("input[name=nutrient9]").eq(2).val()=="") $("input[name=nutrient9]").eq(2).val(120);															// 요구량 제한(%요구량) 최대
+
+		// 지방(g), 건물
+		$("input[name=nutrient10]").eq(0).val((($("#fatQy").val() * feedEnergy / 1000) * nutrient3_1 / 1000).toFixed(2));						// 영양소요구량 : (기준값[자묘/번식, 성묘, 자견/번식, 성견] * 사료에너지 / 1000) * 건물섭취량(g) 영양소요구량 /1000
+		if($("input[name=nutrient10]").eq(1).val()=="") $("input[name=nutrient10]").eq(1).val(Number($("#fatMumm").val()));														// 요구량 제한(%요구량) 최소
+		if($("input[name=nutrient10]").eq(2).val()=="") $("input[name=nutrient10]").eq(2).val(Number($("#fatMxmm").val()));														// 요구량 제한(%요구량) 최대
+
+		// 리놀레산(g), 건물
+		$("input[name=nutrient11]").eq(0).val((($("#lnacQy").val() * feedEnergy / 1000) * nutrient3_1 / 1000).toFixed(2));						// 영양소요구량 : (기준값[자묘/번식, 성묘, 자견/번식, 성견] * 사료에너지 / 1000) * 건물섭취량(g) 영양소요구량 /1000
+		if($("input[name=nutrient11]").eq(1).val()=="") $("input[name=nutrient11]").eq(1).val(Number($("#lnacMumm").val()));														// 요구량 제한(%요구량) 최소
+		if($("input[name=nutrient11]").eq(2).val()=="") $("input[name=nutrient11]").eq(2).val(Number($("#lnacMxmm").val()));														// 요구량 제한(%요구량) 최대
+
+		// 리놀렌산(g), 건물
+		$("input[name=nutrient12]").eq(0).val((($("#liacQy").val() * feedEnergy / 1000) * nutrient3_1 / 1000).toFixed(2));						// 영양소요구량 : (기준값[자묘/번식, 성묘, 자견/번식, 성견] * 사료에너지 / 1000) * 건물섭취량(g) 영양소요구량 /1000
+		if($("input[name=nutrient12]").eq(1).val()=="") $("input[name=nutrient12]").eq(1).val(Number($("#liacMumm").val()));														// 요구량 제한(%요구량) 최소
+		if($("input[name=nutrient12]").eq(2).val()=="") $("input[name=nutrient12]").eq(2).val(Number($("#liacMxmm").val()));														// 요구량 제한(%요구량) 최대
+
+		// 비타민 A(RE), 건물
+		$("input[name=nutrient13]").eq(0).val((($("#vtmaQy").val() * feedEnergy / 1000) * nutrient3_1 / 1000).toFixed(2));						// 영양소요구량 : (기준값[자묘/번식, 성묘, 자견/번식, 성견] * 사료에너지 / 1000) * 건물섭취량(g) 영양소요구량 /1000
+		if($("input[name=nutrient13]").eq(1).val()=="") $("input[name=nutrient13]").eq(1).val(Number($("#vtmaMumm").val()));														// 요구량 제한(%요구량) 최소
+		if($("input[name=nutrient13]").eq(2).val()=="") $("input[name=nutrient13]").eq(2).val(Number($("#vtmaMxmm").val()));														// 요구량 제한(%요구량) 최대
+
+		// 나트륨(g), 건물
+		$("input[name=nutrient14]").eq(0).val((($("#naQy").val() * feedEnergy / 1000) * nutrient3_1 / 1000).toFixed(2));						// 영양소요구량 : (기준값[자묘/번식, 성묘, 자견/번식, 성견] * 사료에너지 / 1000) * 건물섭취량(g) 영양소요구량 /1000
+		if($("input[name=nutrient14]").eq(1).val()=="") $("input[name=nutrient14]").eq(1).val(Number($("#naMumm").val()));														// 요구량 제한(%요구량) 최소
+		if($("input[name=nutrient14]").eq(2).val()=="") $("input[name=nutrient14]").eq(2).val(Number($("#naMxmm").val()));														// 요구량 제한(%요구량) 최대
+
+		// 칼륨(g), 건물
+		$("input[name=nutrient15]").eq(0).val((($("#ptssQy").val() * feedEnergy / 1000) * nutrient3_1 / 1000).toFixed(2));						// 영양소요구량 : (기준값[자묘/번식, 성묘, 자견/번식, 성견] * 사료에너지 / 1000) * 건물섭취량(g) 영양소요구량 /1000
+		if($("input[name=nutrient15]").eq(1).val()=="") $("input[name=nutrient15]").eq(1).val(Number($("#ptssMumm").val()));														// 요구량 제한(%요구량) 최소
+		if($("input[name=nutrient15]").eq(2).val()=="") $("input[name=nutrient15]").eq(2).val(Number($("#ptssMxmm").val()));														// 요구량 제한(%요구량) 최대
+
+		// 총식이섬유(%), 건물
+		if($("input[name=nutrient16]").eq(0).val()=="") $("input[name=nutrient16]").eq(0).val("0.00");													// 영양소요구량
+		if($("input[name=nutrient16]").eq(1).val()=="") $("input[name=nutrient16]").eq(1).val(100);														// 요구량 제한(%요구량) 최소
+		if($("input[name=nutrient16]").eq(2).val()=="") $("input[name=nutrient16]").eq(2).val(200);														// 요구량 제한(%요구량) 최대
+
+		// 불용성식이섬유(g), 건물
+		if($("input[name=nutrient17]").eq(0).val()=="") $("input[name=nutrient17]").eq(0).val("0.00");													// 영양소요구량
+		if($("input[name=nutrient17]").eq(1).val()=="") $("input[name=nutrient17]").eq(1).val(100);														// 요구량 제한(%요구량) 최소
+		if($("input[name=nutrient17]").eq(2).val()=="") $("input[name=nutrient17]").eq(2).val(200);														// 요구량 제한(%요구량) 최대
+
+		// 수용성식이섬유(g), 건물
+		if($("input[name=nutrient18]").eq(0).val()=="") $("input[name=nutrient18]").eq(0).val("0.00");													// 영양소요구량
+		if($("input[name=nutrient18]").eq(1).val()=="") $("input[name=nutrient18]").eq(1).val(100);														// 요구량 제한(%요구량) 최소
+		if($("input[name=nutrient18]").eq(2).val()=="") $("input[name=nutrient18]").eq(2).val(200);														// 요구량 제한(%요구량) 최대
+
+		// 마그네슘(g), 건물
+		$("input[name=nutrient19]").eq(0).val((($("#mgmQy").val() * feedEnergy / 1000) * nutrient3_1 / 1000).toFixed(2));						// 영양소요구량 : (기준값[자묘/번식, 성묘, 자견/번식, 성견] * 사료에너지 / 1000) * 건물섭취량(g) 영양소요구량 /1000
+		if($("input[name=nutrient19]").eq(1).val()=="") $("input[name=nutrient19]").eq(1).val(Number($("#mgmMumm").val()));														// 요구량 제한(%요구량) 최소
+		if($("input[name=nutrient19]").eq(2).val()=="") $("input[name=nutrient19]").eq(2).val(Number($("#mgmMxmm").val()));
+
+		if(growthStepmNm=="자견" || growthStepmNm=="자묘"){
+			goalFrwg = "0";
+			emergAnimal = "0";
+			stageOfLactation = "0";
+		}else if(growthStepmNm=="성견" || growthStepmNm=="성묘"){
+			if(animalTyNm=="임신기 암캐"){
+				expectMtrtyFrwg = "0";
+				emergAnimal = "0";
+			}else if(animalTyNm=="비유기 암캐" || animalTyNm=="비유기 암코양이"){
+				expectMtrtyFrwg = "0";
+			}else{
+				expectMtrtyFrwg = "0";
+				emergAnimal = "0";
+				stageOfLactation = "0";
+			}
+		}
+
+		$.ajax({
+			url : "/portal/ps/psx/psxf/mxnCtCalc.ps",
+	    	type : "POST",
+	    	data : $("#inputForm").serialize() +
+				"&animalSeNm=" + animalSeCodeText +
+				"&spciesNm=" + spciesNm +
+				"&growthStepmNm=" + growthStepmNm +
+				"&sexdstnNm=" + sexdstnNm +
+				"&actStepNm=" +animalTyNm +
+				"&nowFrwg=" + nowFrwg +
+				"&goalFrwg=" + goalFrwg +
+				"&emergAnimal=" + emergAnimal +
+				"&expectMtrtyFrwg=" + expectMtrtyFrwg +
+				"&stageOfLactation=" + stageOfLactation +
+				"&actDgree=" + actDgree +
+				"&mitrContLwlyr=" + mitrContLwlyr +
+				"&mxnCpcty=" + mxnCpcty +
+				"&feedSeqNo=" + feedSeqNoArr.join(","),
+	    	dataType : "json",
+	    	success : function (data) {
+	    		var resultYn = data.mxnCtCalc.resultYn;
+	    		var rawMaterialPerOne = 0;																																	// 배합비(%) 1회분
+	    		var rawMaterialPerOneSum = $("#mxnCpcty").val() * 1000; 																						// 배합비(%) 1회분 합
+	    		var rawMaterialRateSum = 0;																																	// 배합비(%) 합
+	    		var rawMaterialUseMax = 0;																																	// 원료 사용 제한(%) 최대
+	    		var orginlPc = 0;																																					// 금액(원/kg) 원물
+	    		var orginlPcSum = 0;																																			// 금액(원/kg) 원물 합
+
+	    		if(resultYn=="N"){
+	    			$(".resultBox").removeClass("sucess");
+	    			$(".resultBox").addClass("warning");
+	    			$(".resultBox").html("배합 실패");
+
+	    			// 영양소 정보 초기화
+	    			for(var i=1; i<=19; i++){
+		    			$("#nutrientTable").find("input[name=nutrient" + i + "]:gt(2)").val("");
+	    			}
+
+	    			$("#nutrient2_3").val(""); // 사료급여량(g) - 영양소공급량
+	    			$("#nutrient3_3").val(""); // 건물섭취량(g) - 영양소공급량
+
+	    			for(var i=1; i<=6; i++){
+	    				$("#nutrientTable2").find("tr:eq(" + i + ") > td:gt(0)").html("");
+	    			}
+
+	    			for(var i=0; i<=4; i++){
+	    				$("#nutrientTable3").find("tr:eq(" + i + ") > td:gt(1)").html("");
+	    			}
+
+	    			for(var i=0; i<=12; i++){
+	    				$("#nutrientTable4").find("tr:eq(" + i + ") > td:gt(0)").html("");
+	    			}
+
+	    			// 배합비 배합량(g) - 일일두당 & 배합량(g) - 1회분 & 배합비(%) & 금액(원/kg) 원물 초기화
+	    			$("input[name=rawMaterialPer]").val("");
+	    			$("input[name=rawMaterialPerOne]").val("");
+	    			$("input[name=rawMaterialRate]").val("");
+	    			$("input[name=orginlPc]").val("");
+
+	    			// 배합비 배합량(g) - 일일두당 합계 & 배합량(g) - 1회분 합계 & 배합비(%) 합계 & 금액(원/kg) 원물 합계 & 풍건물(12%) 합계 초기화
+	    			$("#rawMaterialPerSum").val(0);
+	    			$("#rawMaterialPerOneSum").val(0);
+	    			$("#rawMaterialRateSum").val(0);
+	    			$("#orginlPcSum").val(0);
+	    			$("#airDryMatterSum").val(0);
+
+	    			return;
+	    		}
+
+	    		// 배합비(%) 결과
+	    		$(data.mxnCtCalc.rawMaterialRate).each(function(index, value){
+	    			rawMaterialUseMax = Number($("input[name=rawMaterialUseMax]").eq(index).val());
+	    			rawMaterialUseMin = Number($("input[name=rawMaterialUseMin]").eq(index).val());
+	    			rawMaterialPerOne = value * 10 * rawMaterialPerOneSum / 1000;
+	    			orginlPc = Math.round(Number($("input[name=rawMaterialPc]").eq(index).val().replace(/,/g, "")) * value * 10 / 1000);
+
+    				$("input[name=rawMaterialPerOne]").eq(index).val(cfSetMoneyComma(rawMaterialPerOne.toFixed(1)));
+	    			$("input[name=rawMaterialRate]").eq(index).val(value);
+	    			$("input[name=orginlPc]").eq(index).val(cfSetMoneyComma(String(orginlPc)));
+
+	    			rawMaterialRateSum += Number(value);
+	    			orginlPcSum += Number(orginlPc);
+
+	    			if(Number(value) != 0){																												// 배합비(%)가 0이 아닐 경우
+	    				if(rawMaterialUseMax <= Number(value)){																					// 원료 사용 제한(%) 최대값이 배합비(%)와 같거나 클 경우
+							$("input[name=airDryMatter]").eq(index).val("▲");
+							$("input[name=airDryMatter]").eq(index).css("color", "red");
+	    				}else if(rawMaterialUseMin >= Number(value)){																			// 원료 사용 제한(%) 최소값이 배합비(%)와 같거나 작을 경우
+	    					$("input[name=airDryMatter]").eq(index).val("▼");
+							$("input[name=airDryMatter]").eq(index).css("color", "blue");
+	    				}else{
+	    					$("input[name=airDryMatter]").eq(index).val("");
+	    				}
+	    			}else{
+	    				$("input[name=airDryMatter]").eq(index).val("");
+	    			}
+	    		});
+
+				// 배합량(g) 1회분 합
+	    		$("#rawMaterialPerOneSum").val(cfSetMoneyComma(String(rawMaterialPerOneSum)));
+
+	    		// 배합비(%) 합
+	    		$("#rawMaterialRateSum").val(Math.round(rawMaterialRateSum));
+
+	    		// 금액(원/kg) 원물 합
+	    		$("#orginlPcSum").val(cfSetMoneyComma(String(orginlPcSum)));
+
+	    		var protAsFedSum = 0;
+	    		var fatAsFedSum = 0;
+	    		var crfbAsFedSum = 0;
+	    		var ashsAsFedSum = 0;
+	    		var mitrAsFedSum = 0;
+	    		var nfeAsFedSum = 0;
+	    		var trypAsFedSum = 0;
+	    		var clciAsFedSum = 0;
+	    		var phphAsFedSum = 0;
+	    		var lnacAsFedSum = 0;
+	    		var liacAsFedSum = 0;
+	    		var vtmaAsFedSum = 0;
+	    		var naAsFedSum = 0;
+	    		var ptssAsFedSum = 0;
+	    		var mgmAsFedSum = 0;
+	    		var totEdblfibrAsFedSum = 0;
+	    		var inslbltyEdblfibrAsFedSum = 0;
+	    		var slwtEdblfibrAsFedSum = 0;
+
+	    		// AsFed(g/kg) 합
+	    		$("input[name=rawMaterialRate]").each(function(index, value){
+	    			var rawMaterialProt = $("input[name=rawMaterialProt]").eq(index);													// 단백질
+	    			var rawMaterialFat = $("input[name=rawMaterialFat]").eq(index);														// 지방
+	    			var rawMaterialCrb = $("input[name=rawMaterialCrb]").eq(index);														// 탄수화물
+	    			var rawMaterialCrfb = $("input[name=rawMaterialCrfb]").eq(index);													// 조섬유
+	    			var rawMaterialAshs = $("input[name=rawMaterialAshs]").eq(index);													// 회분
+	    			var rawMaterialMitr = $("input[name=rawMaterialMitr]").eq(index);													// 수분
+	    			var rawMaterialTryp = $("input[name=rawMaterialTryp]").eq(index);													// 트립토판
+	    			var rawMaterialClci = $("input[name=rawMaterialClci]").eq(index);														// 칼슘
+	    			var rawMaterialPhph = $("input[name=rawMaterialPhph]").eq(index);													// 인
+	    			var rawMaterialLnac = $("input[name=rawMaterialLnac]").eq(index);													// 리놀레산
+	    			var rawMaterialLiac = $("input[name=rawMaterialLiac]").eq(index);													// 리놀렌산
+	    			var rawMaterialVtma = $("input[name=rawMaterialVtma]").eq(index);												// 비타민 A
+	    			var rawMaterialNa = $("input[name=rawMaterialNa]").eq(index);														// 나트륨
+	    			var rawMaterialPtss = $("input[name=rawMaterialPtss]").eq(index);													// 칼륨
+	    			var rawMaterialMgm = $("input[name=rawMaterialMgm]").eq(index);													// 마그네슘
+	    			var rawMaterialTotEdblfibr = $("input[name=rawMaterialTotEdblfibr]").eq(index);									// 총 식이섬유
+	    			var rawMaterialInslbltyEdblfibr = $("input[name=rawMaterialInslbltyEdblfibr]").eq(index);						// 불용성 식이섬유
+	    			var rawMaterialSlwtEdblfibr = $("input[name=rawMaterialSlwtEdblfibr]").eq(index);								// 수용성 식이섬유
+
+	    			protAsFedSum += (Number($(this).val()) * 10 * (rawMaterialProt.val() / 100));
+	    			fatAsFedSum += (Number($(this).val()) * 10 * (rawMaterialFat.val() / 100));
+	    			crfbAsFedSum += (Number($(this).val()) * 10 * (rawMaterialCrfb.val() / 100));
+	    			ashsAsFedSum += (Number($(this).val()) * 10 * (rawMaterialAshs.val() / 100));
+	    			mitrAsFedSum += (Number($(this).val()) * 10 * (rawMaterialMitr.val() / 100));
+	    			nfeAsFedSum += (Number($(this).val()) * 10 * (rawMaterialCrb.val()- rawMaterialCrfb.val()) / 100);
+	    			trypAsFedSum += (Number($(this).val()) * 10 * (rawMaterialTryp.val() / 100));
+	    			clciAsFedSum += (Number($(this).val()) * 10 * (rawMaterialClci.val() / 100));
+	    			phphAsFedSum += (Number($(this).val()) * 10 * (rawMaterialPhph.val() / 100));
+	    			lnacAsFedSum += (Number($(this).val()) * 10 * (rawMaterialLnac.val() / 100));
+	    			liacAsFedSum += (Number($(this).val()) * 10 * (rawMaterialLiac.val() / 100));
+	    			vtmaAsFedSum += (Number($(this).val()) * 10 * (rawMaterialVtma.val() / 100));
+	    			naAsFedSum += (Number($(this).val()) * 10 * (rawMaterialNa.val() / 100));
+	    			ptssAsFedSum += (Number($(this).val()) * 10 * (rawMaterialPtss.val() / 100));
+	    			mgmAsFedSum += (Number($(this).val()) * 10 * (rawMaterialMgm.val() / 100));
+	    			totEdblfibrAsFedSum += (Number($(this).val()) * 10 * (rawMaterialTotEdblfibr.val() / 100));
+	    			inslbltyEdblfibrAsFedSum += (Number($(this).val()) * 10 * (rawMaterialInslbltyEdblfibr.val() / 100));
+	    			slwtEdblfibrAsFedSum += (Number($(this).val()) * 10 * (rawMaterialSlwtEdblfibr.val() / 100));
+	    		});
+
+	    		// AsFed(g/kg)
+	    		$("#protAsFedSum").html(protAsFedSum.toFixed(2));
+	    		$("#fatAsFedSum").html(fatAsFedSum.toFixed(2));
+	    		$("#crfbAsFedSum").html(crfbAsFedSum.toFixed(2));
+	    		$("#ashsAsFedSum").html(ashsAsFedSum.toFixed(2));
+	    		$("#mitrAsFedSum").html(mitrAsFedSum.toFixed(2));
+	    		$("#nfeAsFedSum").html("-");
+	    		$("#trypAsFedSum").html(trypAsFedSum.toFixed(2));
+	    		$("#clciAsFedSum").html(clciAsFedSum.toFixed(2));
+	    		$("#phphAsFedSum").html(phphAsFedSum.toFixed(2));
+	    		$("#lnacAsFedSum").html(lnacAsFedSum.toFixed(2));
+	    		$("#liacAsFedSum").html(liacAsFedSum.toFixed(2));
+	    		$("#vtmaAsFedSum").html(cfSetMoneyComma(vtmaAsFedSum.toFixed(1)));
+	    		$("#naAsFedSum").html(naAsFedSum.toFixed(2));
+	    		$("#ptssAsFedSum").html(ptssAsFedSum.toFixed(2));
+	    		$("#mgmAsFedSum").html(mgmAsFedSum.toFixed(2));
+	    		$("#totEdblfibrAsFedSum").html(totEdblfibrAsFedSum.toFixed(2));
+	    		$("#inslbltyEdblfibrAsFedSum").html(inslbltyEdblfibrAsFedSum.toFixed(2));
+	    		$("#slwtEdblfibrAsFedSum").html(slwtEdblfibrAsFedSum.toFixed(2));
+
+	    		// AsFed(%)
+	    		var protAsFedRate = Number(protAsFedSum.toFixed(3)) / 10;
+	    		var fatAsFedRate = Number(fatAsFedSum.toFixed(3)) / 10;
+	    		var crfbAsFedRate = Number(crfbAsFedSum.toFixed(3)) / 10;
+	    		var ashsAsFedRate = Number(ashsAsFedSum.toFixed(3)) / 10;
+	    		var mitrAsFedRate = Number(mitrAsFedSum.toFixed(3)) / 10;
+	    		var nfeAsFedRate = Number(nfeAsFedSum.toFixed(3)) / 10;
+	    		var trypAsFedRate = Number(trypAsFedSum.toFixed(3)) / 10;
+	    		var clciAsFedRate = Number(clciAsFedSum.toFixed(3)) / 10;
+	    		var phphAsFedRate = Number(phphAsFedSum.toFixed(3)) / 10;
+	    		var lnacAsFedRate = Number(lnacAsFedSum.toFixed(3)) / 10;
+	    		var liacAsFedRate = Number(liacAsFedSum.toFixed(3)) / 10;
+	    		var vtmaAsFedRate = Number(vtmaAsFedSum.toFixed(3)) / 10;
+	    		var naAsFedRate = Number(naAsFedSum.toFixed(3)) / 10;
+	    		var ptssAsFedRate = Number(ptssAsFedSum.toFixed(3)) / 10;
+	    		var mgmAsFedRate = Number(mgmAsFedSum.toFixed(3)) / 10;
+	    		var totEdblfibrAsFedRate = Number(totEdblfibrAsFedSum.toFixed(3)) / 10;
+	    		var inslbltyEdblfibrAsFedRate = Number(inslbltyEdblfibrAsFedSum.toFixed(3)) / 10;
+	    		var slwtEdblfibrAsFedRate = Number(slwtEdblfibrAsFedSum.toFixed(3)) / 10;
+
+	    		$("#protAsFedRate").html(protAsFedRate.toFixed(2));
+	    		$("#fatAsFedRate").html(fatAsFedRate.toFixed(2));
+	    		$("#crfbAsFedRate").html(crfbAsFedRate.toFixed(2));
+	    		$("#ashsAsFedRate").html(ashsAsFedRate.toFixed(2));
+	    		$("#mitrAsFedRate").html(mitrAsFedRate.toFixed(2));
+	    		$("#nfeAsFedRate").html("-");
+	    		$("#trypAsFedRate").html(trypAsFedRate.toFixed(2));
+	    		$("#clciAsFedRate").html(clciAsFedRate.toFixed(2));
+	    		$("#phphAsFedRate").html(phphAsFedRate.toFixed(2));
+	    		$("#lnacAsFedRate").html(lnacAsFedRate.toFixed(2));
+	    		$("#liacAsFedRate").html(liacAsFedRate.toFixed(2));
+	    		$("#vtmaAsFedRate").html(vtmaAsFedRate.toFixed(1));
+	    		$("#naAsFedRate").html(naAsFedRate.toFixed(2));
+	    		$("#ptssAsFedRate").html(ptssAsFedRate.toFixed(2));
+	    		$("#mgmAsFedRate").html(mgmAsFedRate.toFixed(2));
+	    		$("#totEdblfibrAsFedRate").html(totEdblfibrAsFedRate.toFixed(2));
+	    		$("#inslbltyEdblfibrAsFedRate").html(inslbltyEdblfibrAsFedRate.toFixed(2));
+	    		$("#slwtEdblfibrAsFedRate").html(slwtEdblfibrAsFedRate.toFixed(2));
+
+	    		// 100% DM
+	    		var protDm = 100 * (protAsFedRate /  (100 - mitrAsFedRate));
+	    		var fatDm = 100 * (fatAsFedRate /  (100 - mitrAsFedRate));
+	    		var crfbDm = 100 * (crfbAsFedRate /  (100 - mitrAsFedRate));
+	    		var ashsDm = 100 * (ashsAsFedRate /  (100 - mitrAsFedRate));
+	    		var nfeDm = 100 - protDm - fatDm - crfbDm - ashsDm;
+	    		var trypDm = 100 * (trypAsFedRate /  (100 - mitrAsFedRate));
+	    		var clciDm = 100 * (clciAsFedRate /  (100 - mitrAsFedRate));
+	    		var phphDm = 100 * (phphAsFedRate /  (100 - mitrAsFedRate));
+	    		var lnacDm = 100 * (lnacAsFedRate /  (100 - mitrAsFedRate));
+	    		var liacDm = 100 * (liacAsFedRate /  (100 - mitrAsFedRate));
+	    		var vtmaDm = 100 * (vtmaAsFedRate /  (100 - mitrAsFedRate));
+	    		var naDm = 100 * (naAsFedRate /  (100 - mitrAsFedRate));
+	    		var ptssDm = 100 * (ptssAsFedRate /  (100 - mitrAsFedRate));
+	    		var mgmDm = 100 * (mgmAsFedRate /  (100 - mitrAsFedRate));
+	    		var totEdblfibrDm = 100 * (totEdblfibrAsFedRate /  (100 - mitrAsFedRate));
+	    		var inslbltyEdblfibrDm = 100 * (inslbltyEdblfibrAsFedRate /  (100 - mitrAsFedRate));
+	    		var slwtEdblfibrDm = 100 * (slwtEdblfibrAsFedRate /  (100 - mitrAsFedRate));
+	    		var caP = Number((clciDm / phphDm).toFixed(2));
+
+	    		$("#protDm").html(protDm.toFixed(2));
+	    		$("#fatDm").html(fatDm.toFixed(2));
+	    		$("#crfbDm").html(crfbDm.toFixed(2));
+	    		$("#ashsDm").html(ashsDm.toFixed(2));
+	    		$("#mitrDm").html("0.0");
+	    		$("#nfeDm").html(nfeDm.toFixed(2));
+	    		$("#caP").html("<b>" + caP + "</b>");
+	    		$("#trypDm").html(trypDm.toFixed(2));
+	    		$("#clciDm").html(clciDm.toFixed(2));
+	    		$("#phphDm").html(phphDm.toFixed(2));
+	    		$("#lnacDm").html(lnacDm.toFixed(2));
+	    		$("#liacDm").html(liacDm.toFixed(2));
+	    		$("#vtmaDm").html(vtmaDm.toFixed(1));
+	    		$("#naDm").html(naDm.toFixed(2));
+	    		$("#ptssDm").html(ptssDm.toFixed(2));
+	    		$("#mgmDm").html(mgmDm.toFixed(2));
+	    		$("#totEdblfibrDm").html(totEdblfibrDm.toFixed(2));
+	    		$("#inslbltyEdblfibrDm").html(inslbltyEdblfibrDm.toFixed(2));
+	    		$("#slwtEdblfibrDm").html(slwtEdblfibrDm.toFixed(2));
+
+	    		//by protein
+	    		var byProteinDm = 10 * ($("#byProteinDmSet").val() * protDm);
+	    		var byProteinAsFed = Number(byProteinDm.toFixed(1)) / 100 * (100 - mitrAsFedRate);
+
+	    		$("#byProteinDm").html(cfSetMoneyComma(byProteinDm.toFixed(1)));
+	    		$("#byProteinAsFed").html(cfSetMoneyComma(byProteinAsFed.toFixed(1)));
+
+	    		// by fat
+	    		var byFatDm = 10 * ($("#byFatDmSet").val() * fatDm);
+	    		var byFatAsFed = Number(byFatDm.toFixed(1)) / 100 * (100 - mitrAsFedRate);
+
+	    		$("#byFatDm").html(cfSetMoneyComma(byFatDm.toFixed(1)));
+	    		$("#byFatAsFed").html(cfSetMoneyComma(byFatAsFed.toFixed(1)));
+
+	    		// by NFE
+	    		var byNfeDm = 10 * ($("#byNfeDmSet").val() * nfeDm);
+	    		var byNfeAsFed = Number(byNfeDm.toFixed(1)) / 100 * (100 - mitrAsFedRate);
+
+	    		$("#byNfeDm").html(cfSetMoneyComma(byNfeDm.toFixed(1)));
+	    		$("#byNfeAsFed").html(cfSetMoneyComma(byNfeAsFed.toFixed(1)));
+
+	    		// MEdiet
+	    		var meDietDm = byProteinDm + byFatDm + byNfeDm;
+
+	    		$("#meDietAsFed").html(cfSetMoneyComma((byProteinAsFed + byFatAsFed + byNfeAsFed).toFixed(1)));
+	    		$("#meDietDm").html(cfSetMoneyComma(meDietDm.toFixed(1)));
+
+	    		// Etc
+	    		$("#byProteinEtc").html("<b>" + (100 * (byProteinDm / meDietDm)).toFixed(1) + "</b>%");
+	    		$("#byFatEtc").html("<b>" + (100 * (byFatDm / meDietDm)).toFixed(1) + "</b>%");
+	    		$("#byNfeEtc").html("<b>" + (100 * (byNfeDm / meDietDm)).toFixed(1) + "</b>%");
+
+	    		// 수분함량(%)
+	    		nutrient1.eq(3).val(mitrAsFedRate.toFixed(2));																					// 수분함량(%) - 영양소공급량
+	    		nutrient1.eq(5).val(mitrAsFedRate.toFixed(2));																					// 수분함량(%) - 영양소 함량(%)
+				if($("input[name='nutrientChk'][value='nutrient1']").is(":checked")){
+	    			fncDispDiff(nutrient1, Number(nutrient1.eq(3).val()) - Number(nutrient1.eq(0).val()));								// 수분함량(%) - 편차
+	    			fncStatus(nutrient1);																													// 수분함량(%) - 상태
+	    		}
+
+	    		// 사료급여량(g)
+	    		var nutrient2_3 = nutrient3_1 * $("#feedEnergy").val() / Number($("#meDietAsFed").html().replace(/,/g, ""));
+	    		nutrient2.eq(3).val(nutrient2_3.toFixed(2));																						// 사료급여량(g) - 영양소공급량
+	    		$("#nutrient2_3").val(nutrient2_3.toFixed(2));
+
+	    		// 건물섭취량(g)
+	    		var nutrient3_3 = nutrient3_1 * $("#feedEnergy").val() / meDietDm;
+	    		nutrient3.eq(3).val(nutrient3_3.toFixed(2));																						// 건물섭취량(g) - 영양소공급량
+	    		$("#nutrient3_3").val(nutrient3_3.toFixed(2));
+
+	    		var rawMaterialPer = 0;																													// 배합비(%) 일일 두당
+	    		var rawMaterialPerSum = 0;																											// 배합비(%) 일일 두당 합
+
+	    		// 배합량(g) 일일 두당
+	    		$("input[name=rawMaterialRate]").each(function(index){
+	    			rawMaterialPer = Number(nutrient2_3.toFixed(2)) * $(this).val() / 100;												// 사료급여량(g) - 영양소공급량 * 배합비(%) / 100
+
+	    			$("input[name=rawMaterialPer]").eq(index).val(cfSetMoneyComma(rawMaterialPer.toFixed(2)));
+
+	    			rawMaterialPerSum += Number(rawMaterialPer.toFixed(2));
+	    		});
+
+	    		$("#rawMaterialPerSum").val(cfSetMoneyComma(rawMaterialPerSum.toFixed(2)));
+
+	    		// 금액(원/kg) 풍건물(12%)
+	    		$("#airDryMatterSum").val(cfSetMoneyComma(String(Math.round(orginlPcSum * (100 - 12) / (100 - Number(mitrAsFedRate.toFixed(2)))))));
+
+	    		// 단백질(g)
+	    		var nutrient5_3 = protDm * 10 * nutrient3_3 / 1000;
+	    		nutrient5.eq(3).val(nutrient5_3.toFixed(2));																						// 단백질(g) - 영양소공급량
+	    		nutrient5.eq(5).val((nutrient5_3 / nutrient3_3 / 10).toFixed(2).replace(".00", ""));									// 단백질(g) - 영양소 함량(%) : 단백질(g) - 영양소공급량 /  건물섭취량(g) - 영양소공급량 / 10
+
+	    		fncDispDiff(nutrient5, Number(nutrient5.eq(3).val()) - Number(nutrient5.eq(0).val()));								// 단백질(g) - 편차
+	    		fncStatus(nutrient5);																													// 단백질(g) - 상태
+
+	    		// 트립토판(g)
+	    		var nutrient6_3 = trypDm * 10 * nutrient3_3 / 1000;
+	    		nutrient6.eq(3).val(nutrient6_3.toFixed(2));																						// 트립토판(g) - 영양소공급량
+	    		nutrient6.eq(5).val((nutrient6_3 / nutrient3_3 / 10).toFixed(2).replace(".00", ""));									// 트립토판(g) - 영양소 함량(%) : 트립토판(g) - 영양소공급량 /  건물섭취량(g) - 영양소공급량 / 10
+
+	    		fncDispDiff(nutrient6, Number(nutrient6.eq(3).val()) - Number(nutrient6.eq(0).val()));								// 트립토판(g) - 편차
+	    		fncStatus(nutrient6);																													// 트립토판(g) - 상태
+
+	    		// 칼슘(g)
+	    		var nutrient7_3 = clciDm * 10 * nutrient3_3 / 1000;
+	    		nutrient7.eq(3).val(nutrient7_3.toFixed(2));																						// 칼슘(g) - 영양소공급량
+	    		nutrient7.eq(5).val((nutrient7_3 / nutrient3_3 / 10).toFixed(2).replace(".00", ""));									// 칼슘(g) - 영양소 함량(%) : 칼슘(g) - 영양소공급량 /  건물섭취량(g) - 영양소공급량 / 10
+
+	    		fncDispDiff(nutrient7, Number(nutrient7.eq(3).val()) - Number(nutrient7.eq(0).val()));								// 칼슘(g) - 편차
+	    		fncStatus(nutrient7);																													// 칼슘(g) - 상태
+
+	    		// 인(g)
+	    		var nutrient8_3 = phphDm * 10 * nutrient3_3 / 1000;
+	    		nutrient8.eq(3).val(nutrient8_3.toFixed(2));																						// 인(g) - 영양소공급량
+	    		nutrient8.eq(5).val((nutrient8_3 / nutrient3_3 / 10).toFixed(2).replace(".00", ""));									// 인(g) - 영양소 함량(%) : 인(g) - 영양소공급량 /  건물섭취량(g) - 영양소공급량 / 10
+
+	    		fncDispDiff(nutrient8, Number(nutrient8.eq(3).val()) - Number(nutrient8.eq(0).val()));								// 인(g) - 편차
+	    		fncStatus(nutrient8);																													// 인(g) - 상태
+
+	    		// 지방(g)
+	    		var nutrient10_3 = fatDm * 10 * nutrient3_3 / 1000;
+	    		nutrient10.eq(3).val(nutrient10_3.toFixed(2));																					// 지방(g) - 영양소공급량
+	    		nutrient10.eq(5).val((nutrient10_3 / nutrient3_3 / 10).toFixed(2).replace(".00", ""));								// 지방(g) - 영양소 함량(%) : 지방(g) - 영양소공급량 /  건물섭취량(g) - 영양소공급량 / 10
+
+	    		fncDispDiff(nutrient10, Number(nutrient10.eq(3).val()) - Number(nutrient10.eq(0).val()));							// 지방(g) - 편차
+	    		fncStatus(nutrient10);																													// 지방(g) - 상태
+
+	    		// 리놀레산(g)
+	    		var nutrient11_3 = lnacDm * 10 * nutrient3_3 / 1000;
+	    		nutrient11.eq(3).val(nutrient11_3.toFixed(2));																					// 리놀레산(g) - 영양소공급량
+	    		nutrient11.eq(5).val((nutrient11_3 / nutrient3_3 / 10).toFixed(2).replace(".00", ""));								// 리놀레산(g) - 영양소 함량(%) : 리놀레산(g) - 영양소공급량 /  건물섭취량(g) - 영양소공급량 / 10
+
+	    		fncDispDiff(nutrient11, Number(nutrient11.eq(3).val()) - Number(nutrient11.eq(0).val()));							// 리놀레산(g) - 편차
+	    		fncStatus(nutrient11);																													// 리놀레산(g) - 상태
+
+	    		// 리놀렌산(g)
+	    		var nutrient12_3 = liacDm * 10 * nutrient3_3 / 1000;
+	    		nutrient12.eq(3).val(nutrient12_3.toFixed(2));																					// 리놀렌산(g) - 영양소공급량
+	    		nutrient12.eq(5).val((nutrient12_3 / nutrient3_3 / 10).toFixed(2).replace(".00", ""));								// 리놀렌산(g) - 영양소 함량(%) : 리놀렌산(g) - 영양소공급량 /  건물섭취량(g) - 영양소공급량 / 10
+
+	    		fncDispDiff(nutrient12, Number(nutrient12.eq(3).val()) - Number(nutrient12.eq(0).val()));							// 리놀렌산(g) - 편차
+	    		fncStatus(nutrient12);																													// 리놀렌산(g) - 상태
+
+	    		// 비타민 A(RE)
+	    		var nutrient13_3 = vtmaDm * 10 * nutrient3_3 / 1000;
+	    		nutrient13.eq(3).val(nutrient13_3.toFixed(2));																					// 비타민 A(RE) - 영양소공급량
+	    		nutrient13.eq(5).val((nutrient13_3 / nutrient3_3 / 10).toFixed(2).replace(".00", ""));								// 비타민 A(RE) - 영양소 함량(%) : 비타민 A(RE) - 영양소공급량 /  건물섭취량(g) - 영양소공급량 / 10
+
+	    		fncDispDiff(nutrient13, Number(nutrient13.eq(3).val()) - Number(nutrient13.eq(0).val()));							// 비타민 A(RE) - 편차
+	    		fncStatus(nutrient13);																													// 비타민 A(RE) - 상태
+
+	    		// 나트륨(g)
+	    		var nutrient14_3 = naDm * 10 * nutrient3_3 / 1000;
+	    		nutrient14.eq(3).val(nutrient14_3.toFixed(2));																					// 나트륨(g) - 영양소공급량
+	    		nutrient14.eq(5).val((nutrient14_3 / nutrient3_3 / 10).toFixed(2).replace(".00", ""));								// 나트륨(g) - 영양소 함량(%) : 나트륨(g) - 영양소공급량 /  건물섭취량(g) - 영양소공급량 / 10
+
+	    		fncDispDiff(nutrient14, Number(nutrient14.eq(3).val()) - Number(nutrient14.eq(0).val()));							// 나트륨(g) - 편차
+	    		fncStatus(nutrient14);																													// 나트륨(g) - 상태
+
+	    		// 칼륨(g)
+	    		var nutrient15_3 = ptssDm * 10 * nutrient3_3 / 1000;
+	    		nutrient15.eq(3).val(nutrient15_3.toFixed(2));																					// 칼륨(g) - 영양소공급량
+	    		nutrient15.eq(5).val((nutrient15_3 / nutrient3_3 / 10).toFixed(2).replace(".00", ""));								// 칼륨(g) - 영양소 함량(%) : 칼륨(g) - 영양소공급량 /  건물섭취량(g) - 영양소공급량 / 10
+
+	    		fncDispDiff(nutrient15, Number(nutrient15.eq(3).val()) - Number(nutrient15.eq(0).val()));							// 칼륨(g) - 편차
+	    		fncStatus(nutrient15);																													// 칼륨(g) - 상태
+
+	    		// 마그네슘(g)
+	    		var nutrient19_3 = mgmDm * 10 * nutrient3_3 / 1000;
+	    		nutrient19.eq(3).val(nutrient19_3.toFixed(2));																					// 마그네슘(g) - 영양소공급량
+	    		nutrient19.eq(5).val((nutrient19_3 / nutrient3_3 / 10).toFixed(2).replace(".00", ""));								// 마그네슘(g) - 영양소 함량(%) : 칼륨(g) - 영양소공급량 /  건물섭취량(g) - 영양소공급량 / 10
+
+	    		fncDispDiff(nutrient19, Number(nutrient19.eq(3).val()) - Number(nutrient19.eq(0).val()));							// 마그네슘(g) - 편차
+	    		fncStatus(nutrient19);
+
+	    		// 총식이섬유(%)
+	    		var nutrient16_3 = totEdblfibrDm * 10 * nutrient3_3 / 1000;
+	    		nutrient16.eq(3).val(nutrient16_3.toFixed(2));																					// 총식이섬유(g) - 영양소공급량
+	    		nutrient16.eq(5).val((nutrient16_3 / nutrient3_3 / 10).toFixed(2).replace(".00", ""));								// 총식이섬유(g) - 영양소 함량(%) : 총식이섬유(g) - 영양소공급량 /  건물섭취량(g) - 영양소공급량 / 10
+
+	    		fncDispDiff(nutrient16, Number(nutrient16.eq(3).val()) - Number(nutrient16.eq(0).val()));							// 총식이섬유(g) - 편차
+	    		fncStatus(nutrient16);																													// 총식이섬유(g) - 상태
+
+	    		// 불용성식이섬유(g)
+	    		var nutrient17_3 = inslbltyEdblfibrDm * 10 * nutrient3_3 / 1000;
+	    		nutrient17.eq(3).val(nutrient17_3.toFixed(2));																					// 불용성식이섬유(g) - 영양소공급량
+	    		nutrient17.eq(5).val((nutrient17_3 / nutrient3_3 / 10).toFixed(2).replace(".00", ""));								// 불용성식이섬유(g) - 영양소 함량(%) : 불용성식이섬유(g) - 영양소공급량 /  건물섭취량(g) - 영양소공급량 / 10
+
+	    		fncDispDiff(nutrient17, Number(nutrient17.eq(3).val()) - Number(nutrient17.eq(0).val()));							// 불용성식이섬유(g) - 편차
+	    		fncStatus(nutrient17);																													// 불용성식이섬유(g) - 상태
+
+	    		// 수용성식이섬유(g)
+	    		var nutrient18_3 = slwtEdblfibrDm * 10 * nutrient3_3 / 1000;
+	    		nutrient18.eq(3).val(nutrient18_3.toFixed(2));																					// 수용성식이섬유(g) - 영양소공급량
+	    		nutrient18.eq(5).val((nutrient18_3 / nutrient3_3 / 10).toFixed(2).replace(".00", ""));								// 수용성식이섬유(g) - 영양소 함량(%) : 수용성식이섬유(g) - 영양소공급량 /  건물섭취량(g) - 영양소공급량 / 10
+
+	    		fncDispDiff(nutrient18, Number(nutrient18.eq(3).val()) - Number(nutrient18.eq(0).val()));							// 수용성식이섬유(g) - 편차
+	    		fncStatus(nutrient18);																													// 수용성식이섬유(g) - 상태
+
+	    		//2018.05.28기능개선 해찾기끝난후에 수분함량 체크박스 해제되어있을경우 원물값셋팅및 최대최소100으로 셋팅
+	    		if(!$("input[name='nutrientChk'][value='nutrient1']").is(":checked")){
+					$("input[name=nutrient1]").eq(0).val(mitrAsFedRate.toFixed(2));// 영양소요구량
+					$("input[name=mitrContLwlyr]").val(mitrAsFedRate.toFixed(2));// 영양소요구량
+					//$("input[name=nutrient1]").eq(1).val(100);// 요구량 제한(%요구량) 최소
+					//$("input[name=nutrient1]").eq(2).val(100);// 요구량 제한(%요구량) 최대
+				}
+	    		$("input[name=nutrient4_3]").val($("input[name=nutrient1]").eq(0).val());
+
+	    		if(caP < 1 || caP > 2){
+	    			$(".resultBox").removeClass("sucess");
+	    			$(".resultBox").addClass("warning");
+	    			$(".resultBox").html("칼슘/인 비율이 1이상 2이하가<br />되도록 조절하세요!");
+
+	    			fncNosh();
+	    		}else{
+		    		// 영양소요구량 및 영양소 공급량 확인
+		    		fncNutrientCheck();
+	    		}
+	    	}
+		});
+	}
+}
+
+// 편차
+function fncDispDiff(obj, deviation){
+	obj.eq(4).css({"color":"black", "font-weight":"normal"});
+
+	if(deviation > 0){
+		obj.eq(4).val("+" + deviation.toFixed(2));
+	}else if(deviation < 0){
+		obj.eq(4).val(deviation.toFixed(2));
+		obj.eq(4).css({"color":"red", "font-weight":"bold"});
+	}else{
+		obj.eq(4).val("");
+	}
+}
+
+// 영양소 상태
+function fncStatus(obj){
+	var val1 = Number(obj.eq(0).val());
+	var val2 = val1 * Number(obj.eq(1).val()) / 100;	// 영양소 요구량 * 요구량 제한(%요구량) 최소 / 100
+	var val3 = val1 * Number(obj.eq(2).val()) / 100;	// 영양소 요구량 * 요구량 제한(%요구량) 최대 / 100
+	var val4 = Number(obj.eq(3).val());
+
+	if(val1 == val4){
+		obj.eq(6).val("▼");
+		obj.eq(6).css("color", "blue");
+	}else if(val3 <= val4){
+		obj.eq(6).val("▲");
+		obj.eq(6).css("color", "red");
+	}else if(val2 >= val4){
+		obj.eq(6).val("▼");
+		obj.eq(6).css("color", "blue");
+	}else{
+		obj.eq(6).val("");
+	}
+}
+
+// 영양소요구량 및 영양소 공급량 확인
+function fncNutrientCheck(){
+	var nutrientCheck = false;
+
+	// 영양소 목록
+	$("input[name='nutrientChk']").each(function(){
+		if($(this).is(":checked")){
+			var input = $("input[name=" + $(this).val() + "]");
+
+			if($(this).val()=="nutrient1"){
+				if(Math.round(Number(input.eq(0).val())) > Math.round(Number(input.eq(3).val()))) nutrientCheck = true;
+			}else{
+				if(Number(input.eq(0).val()) > Number(input.eq(3).val())) nutrientCheck = true;
+			}
+		}
+	});
+
+	if(nutrientCheck){
+		$(".resultBox").removeClass("sucess");
+		$(".resultBox").addClass("warning");
+		$(".resultBox").html("간식");
+
+		fncNosh();
+	}else{
+		$(".resultBox").removeClass("warning");
+		$(".resultBox").addClass("sucess");
+
+		if($("input[name='nutrientChk'][value='nutrient11']").is(":checked") && $("input[name='nutrientChk'][value='nutrient13']").is(":checked") && $("input[name='nutrientChk'][value='nutrient6']").is(":checked")){
+			if($("input[name='nutrientChk'][value='nutrient5']").is(":checked") && $("input[name='nutrientChk'][value='nutrient7']").is(":checked")
+					&& $("input[name='nutrientChk'][value='nutrient8']").is(":checked") && $("input[name='nutrientChk'][value='nutrient10']").is(":checked")
+					&& $("input[name='nutrientChk'][value='nutrient14']").is(":checked") && $("input[name='nutrientChk'][value='nutrient15']").is(":checked")){
+					//&& $("input[name='nutrientChk'][value='nutrient19']").is(":checked")){//마그네슘항목 주석
+				$(".resultBox").html("주식");
+			}else{
+				var nutrient5_4 = $("input[name=nutrient5]").eq(4).val();
+				var nutrient6_4 = $("input[name=nutrient6]").eq(4).val();
+				var nutrient7_4 = $("input[name=nutrient7]").eq(4).val();
+				var nutrient8_4 = $("input[name=nutrient8]").eq(4).val();
+				var nutrient10_4 = $("input[name=nutrient10]").eq(4).val();
+				var nutrient11_4 = $("input[name=nutrient11]").eq(4).val();
+				var nutrient13_4 = $("input[name=nutrient13]").eq(4).val();
+				var nutrient14_4 = $("input[name=nutrient14]").eq(4).val();
+				var nutrient15_4 = $("input[name=nutrient15]").eq(4).val();
+				var nutrient19_4 = $("input[name=nutrient19]").eq(4).val();
+
+				nutrient5_4 = nutrient5_4 == ""? 0: Number(nutrient5_4.replace("+", ""));
+				nutrient6_4 = nutrient6_4 == ""? 0: Number(nutrient6_4.replace("+", ""));
+				nutrient7_4 = nutrient7_4 == ""? 0: Number(nutrient7_4.replace("+", ""));
+				nutrient8_4 = nutrient8_4 == ""? 0: Number(nutrient8_4.replace("+", ""));
+				nutrient10_4 = nutrient10_4 == ""? 0: Number(nutrient10_4.replace("+", ""));
+				nutrient11_4 = nutrient11_4 == ""? 0: Number(nutrient11_4.replace("+", ""));
+				nutrient13_4 = nutrient13_4 == ""? 0: Number(nutrient13_4.replace("+", ""));
+				nutrient14_4 = nutrient14_4 == ""? 0: Number(nutrient14_4.replace("+", ""));
+				nutrient15_4 = nutrient15_4 == ""? 0: Number(nutrient15_4.replace("+", ""));
+				nutrient19_4 = nutrient19_4 == ""? 0: Number(nutrient19_4.replace("+", ""));
+
+				if(nutrient5_4 >= 0 && nutrient6_4 >= 0 && nutrient7_4 >= 0 && nutrient8_4 >= 0 && nutrient10_4 >= 0
+					&& nutrient11_4 >= 0 && nutrient13_4 >= 0 && nutrient14_4 >= 0 && nutrient15_4 >= 0){
+					//&& nutrient19_4 >= 0){//마그네슘항목 주석
+					$(".resultBox").html("주식");
+				}else{
+					$(".resultBox").html("간식");
+
+					fncNosh();
+				}
+			}
+		}else{
+			var nutrient5_4 = $("input[name=nutrient5]").eq(4).val();
+			var nutrient6_4 = $("input[name=nutrient6]").eq(4).val();
+			var nutrient7_4 = $("input[name=nutrient7]").eq(4).val();
+			var nutrient8_4 = $("input[name=nutrient8]").eq(4).val();
+			var nutrient10_4 = $("input[name=nutrient10]").eq(4).val();
+			var nutrient11_4 = $("input[name=nutrient11]").eq(4).val();
+			var nutrient13_4 = $("input[name=nutrient13]").eq(4).val();
+			var nutrient14_4 = $("input[name=nutrient14]").eq(4).val();
+			var nutrient15_4 = $("input[name=nutrient15]").eq(4).val();
+			var nutrient19_4 = $("input[name=nutrient19]").eq(4).val();
+
+			nutrient5_4 = nutrient5_4 == ""? 0: Number(nutrient5_4.replace("+", ""));
+			nutrient6_4 = nutrient6_4 == ""? 0: Number(nutrient6_4.replace("+", ""));
+			nutrient7_4 = nutrient7_4 == ""? 0: Number(nutrient7_4.replace("+", ""));
+			nutrient8_4 = nutrient8_4 == ""? 0: Number(nutrient8_4.replace("+", ""));
+			nutrient10_4 = nutrient10_4 == ""? 0: Number(nutrient10_4.replace("+", ""));
+			nutrient11_4 = nutrient11_4 == ""? 0: Number(nutrient11_4.replace("+", ""));
+			nutrient13_4 = nutrient13_4 == ""? 0: Number(nutrient13_4.replace("+", ""));
+			nutrient14_4 = nutrient14_4 == ""? 0: Number(nutrient14_4.replace("+", ""));
+			nutrient15_4 = nutrient15_4 == ""? 0: Number(nutrient15_4.replace("+", ""));
+			nutrient19_4 = nutrient19_4 == ""? 0: Number(nutrient19_4.replace("+", ""));
+			if(nutrient5_4 >= 0 && nutrient6_4 >= 0 && nutrient7_4 >= 0 && nutrient8_4 >= 0 && nutrient10_4 >= 0
+				&& nutrient11_4 >= 0 && nutrient13_4 >= 0 && nutrient14_4 >= 0 && nutrient15_4 >= 0){
+				//&& nutrient19_4 >= 0){//마그네슘항목 주석
+				$(".resultBox").html("주식");
+			}else{
+				$(".resultBox").html("간식");
+
+				fncNosh();
+			}
+		}
+	}
+// 	if(firCalculFalg == true){
+// 		firCalculFalg = false;
+// 		$("input[name='nutrientChk'][value='nutrient1']").prop("checked",true);
+// 	}
+}
+
+// 원료 검색
+function fncRawMaterialSearch(){
+	$("#feedNm").val($("#searchText").val());
+	$("#sortField").val("");
+	$("#sortOrder").val("ASC");
+	$("#tblList").scrollLeft(0);
+	$("#tblList2").scrollTop(0);
+	fncRawMaterialChoice();
+}
+
+// 원료 탭 선택
+function fncUpperFeedClCode(upperFeedClCode){
+	$("#searchText").val("");
+	$("#upperFeedClCode").val(upperFeedClCode);
+	fncRawMaterialSearch();
+}
+
+// 원료 삭제
+function fncRawMaterialDel(){
+	$("button[name=feedMixDel]").each(function(){
+		$(this).trigger("click");
+	});
+}
+
+// 원료 정렬
+function fncRawMaterialOrder(sortField){
+	$("#sortField").val(sortField);
+
+	if($("#sortOrder").val() == "ASC") $("#sortOrder").val("DESC");
+	else $("#sortOrder").val("ASC");
+
+	fncRawMaterialChoice();
+}
+
+// 간식일 경우 10으로 나눠서 계산
+function fncNosh(){
+	$("#nutrient2_3").val((Number($("#nutrient2_3").val()) / 10).toFixed(2));											// 사료급여량(g) - 영양소공급량
+	$("#nutrient3_3").val((Number($("#nutrient3_3").val()) / 10).toFixed(2));											// 건물섭취량(g) - 영양소공급량
+
+	var rawMaterialPer = 0;																												// 배합비(%) 일일 두당
+	var rawMaterialPerSum = 0;																										// 배합비(%) 일일 두당 합
+
+	// 배합량(g) 일일 두당
+	$("input[name=rawMaterialRate]").each(function(index){
+		rawMaterialPer = Number($("#nutrient2_3").val()) * $(this).val() / 100;											// 사료급여량(g) - 영양소공급량 * 배합비(%) / 100
+
+		$("input[name=rawMaterialPer]").eq(index).val(cfSetMoneyComma(rawMaterialPer.toFixed(2)));
+
+		rawMaterialPerSum += Number(rawMaterialPer.toFixed(2));
+	});
+
+	$("#rawMaterialPerSum").val(cfSetMoneyComma(rawMaterialPerSum.toFixed(2)));								// 배합량(g) 일일 두당 합계
+	$("#nutrient2_3").val(rawMaterialPerSum.toFixed(2));
+}
+
+// 품종 검색
+function fncSearch(){
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// =======================================================================================
+	// $.ajax({
+	// 	url : "/portal/ps/psx/psxf/spciesLst.ps",
+    // 	type : "POST",
+    // 	data : {
+	// 		animalSeCode : $("button[name=animalSeCode].active").val(),
+	// 		sText : $("#sText").val()
+	// 	},
+    // 	dataType : "json",
+    // 	success : function (data) {
+    // 		var tmpHtml = "";
+
+    // 		// 품종
+    // 		if(data.speciesLst.length > 0){
+	// 			$.each(data.speciesLst, function(idx, val){
+	// 				tmpHtml += "<li><a href='#1' onclick=\"javascript:fncSpecies(this, '" + val.expectMtrtyFrwgFmle + "', '" + val.expectMtrtyFrwgMl + "');\">" + val.spciesNm + "</a></li>";
+	// 			});
+    // 		}
+
+	// 		tmpHtml += "<li style='position: relative;'><a href='#1' onclick=\"javascript:fncSpecies(this, 0, 0);\">기타</a><input type='text' class='inputData' id='speicesEtc' name='speicesEtc' style='display:none;'></li>";
+
+	// 		$("#speciesHtml").html(tmpHtml);
+    //     	$("#speciesHtml > li > a").eq(0).trigger("click");
+    // 	}
+	// });
+	// ==================== 품종 리스트 업데이트
+	//
+	var pse0 = 0;
+	var animalSeCode = $("button[name=animalSeCode].active").val();
+	if(animalSeCode=="400001") 		pse0 = 0;
+	else if(animalSeCode=="400002") pse0 = 1;
+	
+	var data = {
+		animalSeCode : $("button[name=animalSeCode].active").val(),
+		sText : $("#sText").val()
+	};
+	var tmpHtml = "";
+
+	// 품종
+	if(pet_species[pse0].length > 0){
+		$.each(pet_species[pse0], function(idx, val){
+			tmpHtml += "<option onclick=\"javascript:fncSpecies(this, '" + val[0] + "', '" + val[1] + "');\" value='" + val[2] + "'>" + val[2] + "</option>";
+        });
+	}
+
+	tmpHtml += "<option style='position: relative;' onclick=\"javascript:fncSpecies(this, 0, 0);\" value='기타'>기타</option>";
+	// <input type='text' class='inputData' id='speicesEtc' name='speicesEtc' style='display:none;'> // 기타 입력 text
+
+	$("#speciesHtml").html(tmpHtml);
+	$("#speciesHtml > option").eq(0).attr("selected", "selected");
+	fncSpecies($("#speciesHtml > option").eq(0), pet_species[pse0][0][0], pet_species[pse0][0][1]);
+}
+
+// 원료 추가
+function feedMxnAddForm(feedSeqNo){
+	$("#feedMxnAddForm").show();
+
+	if(feedSeqNo != ""){
+		var feedSeqNoArr = new Array();
+		feedSeqNoArr[0] = feedSeqNo;
+
+		$.ajax({
+			url : "/portal/ps/psx/psxf/rawMaterialLst.ps",
+	    	type : "POST",
+	    	data : {feedSeqNoArr : feedSeqNoArr},
+	    	dataType : "json",
+	    	success : function (data) {
+	    		var val = data.rawMaterialLst[0];
+
+	    		$("#feedSeqNo").val(val.feedSeqNo);
+	    		$("#input_ctg01").val(val.upperFeedClCode);
+
+				var upperCode = $("#input_ctg01").val();
+
+				$("#input_ctg02").empty();
+				$("#input_ctg02").append("<option value=''>선택</option>");
+
+				if(upperCode!=""){
+					$.ajax({
+						url        : "/portal/cmmLowerCodeLst.do",
+				    	type       : "POST",
+				    	data	   : {codeGroup : 402, upperCode : upperCode, orderCode : 'ordr'},
+				    	dataType   : "json",
+						contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+				    	success    : function (data) {
+							if(data.length>1){
+								for(i=1; i<data.length; i++){
+									$("#input_ctg02").append("<option value='"+data[i].code+"'>" + data[i].codeNm + "</option>")
+								}
+							}
+
+				    		$("#input_ctg02").val(val.feedClCode);
+				    	}
+					});
+				}
+
+	    		$("#inputFeedNm").val(val.feedNm);
+	    		$("#inputMtralPc").val(val.mtralPc);
+	    		$("#inputMitrQy").val(val.mitrQy);
+	    		$("#inputProtQy").val(val.protQy);
+	    		$("#inputTrypQy").val(val.trypQy);
+	    		$("#inputClciQy").val(val.clciQy);
+	    		$("#inputPhphQy").val(val.phphQy);
+	    		$("#inputFatQy").val(val.fatQy);
+	    		$("#inputLnacQy").val(val.lnacQy);
+	    		$("#inputLiacQy").val(val.liacQy);
+	    		$("#inputAshsQy").val(val.ashsQy);
+	    		$("#inputVtmaQy").val(val.vtmaQy);
+	    		$("#inputCrbQy").val(val.crbQy);
+	    		$("#inputCrfbQy").val(val.crfbQy);
+	    		$("#inputTotEdblfibrQy").val(val.totEdblfibrQy);
+	    		$("#inputInslbltyEdblfibrQy").val(val.inslbltyEdblfibrQy);
+	    		$("#inputSlwtEdblfibrQy").val(val.slwtEdblfibrQy);
+	    		$("#inputNaQy").val(val.naQy);
+	    		$("#inputPtssQy").val(val.ptssQy);
+	    		$("#inputMgmQy").val(val.mgmQy);
+	    		$("#inputMummMtralLmtt").val(val.mummMtralLmtt);
+	    		$("#inputMxmmMtralLmtt").val(val.mxmmMtralLmtt);
+	    	}
+		});
+	}
+}
+
+// 원료 추가 닫기
+function feedMxnAddFormClose(){
+	$("#feedMxnAddForm").hide();
+
+	$("#feedMxnInputForm").find("select").val("");
+	$("#feedMxnInputForm").find("input[type=text]").val("");
+	$("#feedSeqNo").val("");
+}
+
+// 원료 저장
+function feedMxnAddFormSave(){
+	// 사료 대분류
+	if($("#input_ctg01").val()==""){
+		alert("사료 대분류를 선택하세요.");
+		$("#input_ctg01").focus();
+		return false;
+	}
+	// 사료 중분류
+	if($("#input_ctg02").val()==""){
+		alert("사료 중분류를 선택하세요.");
+		$("#input_ctg02").focus();
+		return false;
+	}
+	// 사료명
+	if($("#inputFeedNm").val()==""){
+		alert("사료명을 입력하세요.");
+		$("#inputFeedNm").focus();
+		return false;
+	}
+	// 원료가격
+	if($("#inputMtralPc").val()==""){
+		alert("원료가격(원/kg)을 입력하세요.");
+		$("#inputMtralPc").focus();
+		return false;
+	}
+
+	$.ajax({
+		url : "/portal/ps/psx/psxf/feedMxnAdd.ps",
+		data : $("#feedMxnInputForm").serialize(),
+		type : "POST",
+		dataType : "json",
+		success : function(data) {
+			alert(data.msg);
+		}
+	});
+
+	fncRawMaterialChoice();
+}
+
+// 원료 삭제
+function feedMxnDel(feedSeqNo){
+	if(confirm("사용자 원료를 삭제하시겠습니까?")){
+		$("#feedSeqNo").val(feedSeqNo);
+
+		feedSeqNoArr = jQuery.grep(feedSeqNoArr, function(value){
+			return value != feedSeqNo;
+		});
+
+		$(this).parent().parent().remove();
+
+		$.ajax({
+			url : "/portal/ps/psx/psxf/feedMxnDel.ps",
+			data : $("#feedMxnInputForm").serialize(),
+			type : "POST",
+			dataType : "json",
+			success : function(data) {
+				alert(data.msg);
+			}
+		});
+
+		fncRawMaterialChoice();
+	}
+}
+
+// 원료 일괄 등록
+function feedMxnUploadFileForm(){
+	$("#feedMxnAddForm2").show();
+}
+
+// 원료 일괄 등록 저장
+function feedMxnUploadFileFormSave(){
+	// 원료가격
+	if($("#uploadFile").val()==""){
+		alert("엑셀파일을 선택하세요.");
+		return false;
+	}
+
+	var opts = {
+		url: "/portal/ps/psx/psxf/feedMxnUploadFile.ps",
+		dataType: 'json',
+		success: function(data, statusText) { // post-submit callback
+			if(data.rst == "true" && data.isUploadSuccess == true){
+				alert("사용자 원료 총 " + data.totalCommitCount + "건 일괄 등록하였습니다.");
+			}else{
+				alert("사용자 원료 일괄 등록 실패하였습니다.");
+			}
+
+			fncRawMaterialChoice();
+		}
+	};
+
+	$('#feedMxnInputForm2').ajaxSubmit(opts);
+}
+
+// 원료 일괄 등록 닫기
+function feedMxnUploadFileFormClose(){
+	$("#feedMxnAddForm2").hide();
+	$("#uploadFile").val("");
+}
+
+//]]>
+
+function itoStr($num){
+	$num < 10 ? $num = '0'+$num : $num;
+	return $num.toString();
+}
+
+function feedExcelDownload(){
+	var dt = new Date();
+	var year =  itoStr( dt.getFullYear() );
+	var month = itoStr( dt.getMonth() + 1 );
+	var day =   itoStr( dt.getDate() );
+	var hour =  itoStr( dt.getHours() );
+	var mins =  itoStr( dt.getMinutes() );
+	var postfix = year + month + day + hour + mins;
+	var fileName = "반려동물집밥("+$(".chkPet").find(".active").find("button").text()+")"+ postfix + ".xls";
+
+	$trget = $('<div id="template" style="display: none;">');
+	var resultBoxStr = "";
+	if($(".resultBox").html() != '배합상태'){
+		resultBoxStr = $(".resultBox").html();
+	}
+	var bsInfo ='<div style="font-size:22px;">기본정보</div><table class="new"><colgroup><col style="width:10%" /><col style="width:10%" /><col style="width:10%" /><col style="width:10%" /><col style="width:10%" /></colgroup><thead><tr><th scope="col" >반려동물</th><th scope="col" >품종</th><th scope="col" >성장단계</th><th scope="col" >성별</th><th scope="col" >활동단계</th><th scope="col" >배합상태</th></tr></thead><tbody><tr>'
+	+'<td class="tc">'+$(".chkPet").find(".active").find("button").text()+'</td>'
+	+'<td class="tc">'+$(".chkPetStep").find(".stepBox").eq(0).find(".active").text()+'</td>'
+	+'<td class="tc">'+$(".chkPetStep").find(".stepBox").eq(1).find("#species2Html .active").text()+'</td>'
+	+'<td class="tc">'+$(".chkPetStep").find(".stepBox").eq(1).find("#species3Html .active").text()+'</td>'
+	+'<td class="tc">'+$(".chkPetStep").find(".stepBox").eq(2).find(".active").text()+'</td>'
+	+'<td class="tc">'+resultBoxStr+'</td></tr></tbody></table>';
+
+	$('#excelExport1, #excelExport2, #excelExport3, #excelExport5, #excelExport7').find(".chgInp").each(function(i){
+		$(this).attr('value',$(this).val());
+	});
+	$('#excelExport1, #excelExport2, #excelExport3').find(".chgChb").each(function(i){
+		if($(this).is(':checked')){
+			$(this).attr('checked','checked');
+		}else{
+			$(this).removeAttr('checked');
+		}
+	});
+
+	$trget.html(bsInfo+$('#excelExport1').html()+'<div style="font-size:22px;">영양소정보</div>'+$('#excelExport2').html()+$('#excelExport3').html()+$('#excelExport4').html()+'<div style="font-size:22px;">배합비</div>'+$('#excelExport7').html());
+	$trget.find('#excelExport4Iner').append($('#excelExport5').html()+$('#excelExport6').html());
+
+	$trget.find(".chgInp").each(function(i){
+		var fontStr ="<font>";
+		if($(this).val() =='▲' || $(this).val().indexOf('-') == 0){
+			fontStr="<font style='color:red'>";
+		}else if($(this).val() =='▼'){
+			fontStr="<font style='color:blue'>";
+		}
+		$(this).wrap(fontStr+$(this).val()+"</font>").remove(".chgInp");
+	});
+
+	$trget.find(".chgChb").each(function(i){
+		if($(this).is(':checked')){
+			$(this).wrap("<font>[V]</font>").remove(".chgChb");
+		}else{
+			$(this).wrap("<font></font>").remove(".chgChb");
+		}
+	});
+
+	$trget.find(".exclExceptArea").remove();
+	$trget.find("caption").remove();
+	$trget.find("br").remove();
+	$trget.find(".skip").remove();
+	$trget.find('table').css({
+		"border" : ".5pt solid #000000"
+		,"width" : "100%"
+		,"border-collapse" : "collapse"
+		,"border-spacing" : "0"
+	}).after("<p></p>");
+
+	$trget.find("th").css("background", "rgb(146,208,80)");
+
+	$trget.find("tr, td").css({
+		"border" : ".5pt solid #000000"
+		,"font-size" : "14px"
+		,"font-family" : "돋움, 돋움체, Dotum"
+		,"text-align" : "center"
+	});
+
+	var ua = window.navigator.userAgent;
+	var msIe = ua.indexOf("MSIE");
+
+	if (msIe > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)){
+		var txtArea1 = document.getElementById('txtArea1');
+		txtArea1.contentWindow.document.open("application/vnd.ms-excel","replace");
+		txtArea1.contentWindow.document.write($trget.html());
+		txtArea1.contentWindow.document.close();
+		txtArea1.contentWindow.focus();
+		txtArea1.contentWindow.document.execCommand("SaveAs",true,fileName);
+	}else{
+		var link = document.createElement('a');
+		link.download = fileName;
+		link.href = 'data:text/csv;charset=utf-8,%EF%BB%BF' + $trget.html();
+		link.click();
+	}
+
+	$trget.remove();
+}
+
+//원료값, 배합비 셋팅해서 배합량가기
+function fncMxnCtCalcPage(){
+		var feedCalcValue  = [];
+		var feedCalcNo = [];
+		$("input[name=rawMaterialRate]").each(function(i, value){
+			feedCalcValue[i] = $(this).val();
+		});
+		$("button[name=feedMixDelete]").each(function(i, value){
+			feedCalcNo[i] = $(this).val();
+		});
+		var args = {
+			feedSeqNoArr : feedCalcNo.join(",")
+			,feedCalcValue : feedCalcValue.join(",")
+		}
+		var callUrl = '/portal/ps/psx/psxf/feedMxnWritngSportProgrms.ps?menuId=PS04088';
+		window.open(callUrl+"&"+$.param(args));
+}
+
+function fncTransNutrient1(){
+	$("input[name=nutrient1]").eq(0).val($("input[name=nutrient4_3]").val());
+}
+function fncTransNutrient4(){
+	$("input[name=nutrient4_3]").val($("input[name=nutrient1]").eq(0).val());
+}
+
+function cfSetEvent(fnc, params){
+	if(params == null){
+		$('input').keyup(function(e) {
+			if (e.keyCode == 13) fnc();
+		});
+	}else{
+		for(var i=0; i<params.length; i++){
+			$("#"+params[i]).keyup(function(e) {
+				if (e.keyCode == 13) fnc();
+			});
+		}
+	}
+}
+// ================================================================================
+		</script>
+
+	</body>
+</html>
